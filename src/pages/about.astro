@@ -1,0 +1,191 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import MeetAlder from '../components/about-page-components/MeetAlder'
+import panel from '../assets/about/microwave.svg'
+import wrench from '../assets/about/wrench.svg'
+import houseOutline from '../assets/about/houseOutline.svg'
+import fast50 from '../assets/fast50.svg'
+import ut100 from '../assets/UT100.png'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Learn more about Alder and what makes us a leader in home security. We are here to keep you and your home safe from fire, flood and intrusion." />
+		<title>About | Alder Home Security</title>
+	</head>
+	<body class="bg-white flex flex-col justify-center">
+
+    <Header client:load path="/about" />
+
+    <div class="w-full h-[500px]">
+        <video class="w-full h-full object-cover" loop autoplay muted >
+            <source src="https://alder.wpengine.com/wp-content/uploads/2017/04/aout-bg.mp4" type="video/mp4" />
+            <source src="https://alder.wpengine.com/wp-content/uploads/2017/04/aout-bg.mp4" type="video/ogg" />
+
+
+        </video>
+        <div class="flex flex-col w-full items-center gap-4 absolute top-52">
+            <h1 class="text-white 2xl:text-8xl text-6xl text-center font-medium">Hi, we're Alder</h1>
+            <p class="text-white 2xl:text-4xl text-2xl" >Your family is our focus</p>
+        </div>
+    </div>
+
+    <MeetAlder client:only />
+
+    <div class="flex justify-center bg-white w-full">
+        <div class="flex flex-col py-8 bg-white gap-8 md:gap-16 items-center w-full max-w-7xl">
+
+            <div class=" w-3/4 flex flex-col gap-3 items-center">
+                <h3 class="text-[#58585B] text-5xl font-medium " >Guarantees</h3>
+                <p class="text-[#58585B]" >Our promise to you</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-12 md:gap-0 w-full md:flex-row justify-evenly">
+
+                <div class="flex flex-col w-4/5 md:w-1/4 items-center">
+
+                    <img class=" w-[80px] h-20 " src={houseOutline} alt="outline of a house" />
+
+                    <p class="text-[#58585B] font-medium text-lg ">Free Move</p>
+
+                    <br/>
+
+                    <p class="text-[#58585B] text-center ">If you move to a new home, you'll get a new security system free of charge.</p>
+
+                </div>
+
+                <div class="flex flex-col w-4/5 md:w-1/4 items-center">
+
+                    <img class=" w-[80px] h-20 " src={panel} alt="alder home security panel" />
+
+                    <p class="text-[#58585B] font-medium text-lg ">Free Equipment</p>
+
+                    <br/>
+
+                    <p class="text-[#58585B] text-center ">You never have to pay for your equipment more than once. If something breaks, it's covered for life.</p>
+
+                </div>
+
+                <div class="flex flex-col w-4/5 md:w-1/4 items-center">
+
+                    <img class=" w-[80px] h-20 " src={wrench} alt="wrench icon" />
+
+                    <p class="text-[#58585B] font-medium text-lg ">Free Labor</p>
+
+                    <br/>
+
+                    <p class="text-[#58585B] text-center ">Install and services are free with Alder. If you ever need our help, just call.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-full flex px-8 py-6 flex-col gap-8 md:gap-0 items-center md:flex-row bg-[#627C8F]">
+
+        <div class=" w-full md:w-1/2 flex flex-col items-center justify-center md:items-start gap-8 ">
+            <h3 class="text-white font-medium text-5xl" >Locations</h3>
+
+            <p class="text-white font-medium text-2xl" >All 50 States</p>
+
+            <p class="text-white text-center md:text-left " >As one of the nation's fastest growing privately held security companies we are excited to be able to provide Total Life Safety to you and your family. We hope you enjoy your service.</p>
+        </div>
+
+        <img class=" w-full sm:w-1/2" src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1553205996/MAP-50.png" alt="map of the US with alder logos on each state" />
+
+    </div>
+
+    <div class="w-full bg-white flex justify-center">
+        <div class="w-full max-w-6xl px-4 md:px-8 py-8 gap-12 flex flex-col items-center">
+
+            <div class="flex flex-col items-center w-3/4 gap-3">
+
+                <h3 class="text-[#58585B] font-medium text-5xl text-center " >We're Growing</h3>
+
+                <p class="text-[#58585B] text-center " >Alder was recognized twice as the fastest growing company in Utah</p>
+
+            </div>
+
+            <div class="w-full flex flex-col gap-8 md:flex-row md:gap-0 md:justify-between">
+
+                <div class="flex flex-col gap-4 items-center">
+
+                    <img class=" max-h-48" src={fast50} alt="fast 50 award" />
+
+                    <p class="text-[#58585B] w-4/5 text-center" >Utah Business named Alder the 10th fastest growing company in Utah</p>
+
+                </div>
+
+                <div class="flex flex-col gap-4 items-center">
+
+                    <img class=" max-h-48" src={ut100} alt="utah 100 award" />
+
+                    <p class="text-[#58585B] w-4/5 text-center " >Utah Business named Alder the 10th fastest growing company in Utah</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class=" w-full flex justify-center " >
+        <div class="w-full bg-white max-w-7xl flex flex-col items-center">
+            
+            <h3 class="text-[#58585B] font-medium text-6xl text-center" >Charities We Support</h3>
+
+            <br/>
+
+            <div class="flex flex-row flex-wrap px-3 justify-evenly w-full gap-8 ">
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group.png" alt="Make a Wish" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-Copy.png" alt="Operation Underground Railroad" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-6.png" alt="Cure Blindness Himalayan Cataract Project" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-4.png" alt="Libertas Institute" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/06/Group-2.png" alt="VLCM" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/06/Group.png" alt="Huntsman Cancer Institute University of Utah" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-5.png" alt="Orem High School" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-7.png" alt="GV Company" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/12745577_1685362881735597_8506461761214179454_n.png" alt="Utah Valley University" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-2.png" alt="8-0-1 Classic" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-3.png" alt="Utah Junior Golf Association" />
+
+                <img class="w-20 h-20 md:w-40 md:h-40" src="http://alder.wpengine.com/wp-content/uploads/2017/04/Group-8.png" alt="Vikings Pleasant Grove" />
+
+                <img class="w-60 h-24" src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/e_grayscale/v1561586611/tiny-hero.png" alt="Tiny Hero" />
+
+            </div>
+            
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <Footer/>
+
+    </body>
+</html>

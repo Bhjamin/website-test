@@ -1,0 +1,95 @@
+---
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Family from '../assets/family-front-door.jpg'
+import whitePhone from '../assets/white-phone.svg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="No matter where you are, stay connected to your home with your phone. Confidently protect what matters most with Alder’s total home security systems."/>
+		<title>Alder Home Security</title>
+	</head>
+	<body class="bg-slate-400 flex flex-col justify-center">
+
+        <Header client:load path='/thank-you' />
+
+        <div class="w-full h-[300px] bg-50-10 bg-cover" style={{
+            backgroundImage: `url(${Family})`
+        }} >
+            <div class="w-full h-full bg-neutral-800/[.60] flex flex-col items-center justify-center px-4 gap-6">
+
+                <h1 class="text-white text-5xl font-medium">Thank you!</h1>
+
+                <p class=" text-sm md:text-lg text-white text-center">Thanks for your interest in Alder. A consultant will contact you to discuss your personalized security system options.</p>
+
+            </div>
+        </div>
+
+        <div class="w-full h-[150px] bg-[#297CA3] flex flex-col items-center justify-center p-4 gap-2">
+
+            <h2 class="text-white text-3xl font-medium">Skip the wait.</h2>
+            
+            <p class="text-white text-sm">Call Now to get your custom quote</p>
+            
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] hover:scale-105 hover:shadow-xl transition duration-100  h-8 w-48 rounded-3xl border-2 z-10 border-white">
+                <img alt="phone icon" src={whitePhone}/>
+                <p class="text-white text-[15px]">800-710-1289</p>
+            </a>
+
+        </div>
+        
+        <div class="w-full flex flex-col items-center justify-center bg-white gap-2 py-8 px-4">
+
+            <h2 class="text-[#373737] text-4xl sm:text-5xl font-medium">What's next?</h2>
+
+            <p class="text-[#373737] text-center text-lg">Learn more about how your system can protect your home</p>
+
+            <br/>
+            <br/>
+
+            <div class="w-full max-w-6xl flex flex-col items-center md:flex-row justify-between gap-8 md:gap-4">
+
+                <div class=" w-[200px] xs:w-[300px] flex flex-col items-center gap-4">
+
+                    <a href="/home-security" class="block w-full border-2 border-[#297CA3] text-[#297CA3] text-center rounded-full py-1 hover:scale-105 hover:shadow-xl transition duration-100 ">
+                        Home Security
+                    </a>
+
+                    <p class="text-black text-sm md:text-xs lg:text-sm text-center">Protection from intruders</p>
+
+                </div>
+
+                <div class="w-[200px] xs:w-[300px] flex flex-col items-center gap-4">
+
+                    <a href="/life-safety" class="block w-full border-2 border-[#297CA3] text-[#297CA3] text-center rounded-full py-1 hover:scale-105 hover:shadow-xl transition duration-100 ">
+                        Life Safety
+                    </a>
+
+                    <p class="text-black text-sm md:text-xs lg:text-sm text-center">Safety from fire, flood, and more</p>
+
+                </div>
+
+                <div class="w-[200px] xs:w-[300px] flex flex-col items-center gap-4">
+
+                    <a href="/" class="block w-full border-2 border-[#297CA3] text-[#297CA3] text-center rounded-full py-1 hover:scale-105 hover:shadow-xl transition duration-100 ">
+                        Home Automation
+                    </a>
+
+                    <p class="text-black text-sm md:text-xs lg:text-sm text-center">Peace of mind from your mobile phone</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <Footer />
+
+    </body>
+</html> 

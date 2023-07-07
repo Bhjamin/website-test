@@ -1,0 +1,117 @@
+---
+import Header from '../../components/Header'
+import ProductHeader from '../../components/ProductHeader'
+import ProductSubMenu from '../../components/ProductSubMenu'
+import Footer from '../../components/Footer'
+import productGrid from '../../assets/sensor-grid-Opt.jpg'
+import whitePhone from '../../assets/white-phone.svg'
+import motionsensor from '../../assets/motion-sensor/motionsensor.png'
+import holdingMotion from '../../assets/motion-sensor/holdingMotion.png'
+---
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Have the peace of mind knowing your home is secure. Alder’s motion detectors are designed to provide you with a second line of security in your home."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Motion Detector | Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+
+        <Header client:load path="/products/motion-sensors" />
+
+        <ProductHeader path="/products/motion-sensors" />
+
+        <div class="w-full h-[350px] bg-center bg-cover flex flex-col justify-center items-center px-2 sm:items-start sm:pl-12 md:pl-24 lg:pl-40 gap-6" style={{
+            'backgroundImage': `url(${productGrid})`,
+        }}>
+
+        <h1 class="text-[#297CA3] text-4xl xs:text-5xl text-center font-medium">Motion Sensor</h1>
+
+        <p class="text-[#58585B] text-center">Peace of mind knowing your home is secure</p>
+
+        <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] w-[240px] py-1 rounded-3xl border-2 z-10 border-white">
+            <img alt="phone icon" src={whitePhone}/>
+            <p class="text-white text-[15px]">Call Now for a Quote</p>
+        </a>
+
+        </div>
+
+        <div class="w-full flex flex-col-reverse items-center md:flex-row justify-between gap-8 py-6 md:py-0 md:gap-0">
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:pl-10 ">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Detect Intruders In Your Home</h2>
+                
+                <p class="text-[#58585B] text-center md:text-left xl:leading-7" >A motion detector is the linchpin of your security system, because it's the main device that detects when someone is in your home when they shouldn't be. A motion sensor uses infrared technology to detect movement in an area. If a sensor is tripped, a signal is sent to your security system's control panel, which connects to your monitoring center, alerting you and the monitoring center to a potential threat in your dwelling.</p>
+            </div>
+
+            <img class=" max-w-[60%] sm:max-w-[45%] sm:max-h-[525px]" alt="motion sensor" src={motionsensor} />
+
+        </div>
+
+        <div class="w-full flex flex-col items-center md:flex-row justify-between gap-8 py-6 lg:py-0 md:gap-0 bg-[#F3F3F3]">
+
+            <img class=" w-3/4 md:w-1/2 " alt="someone holding the motion sensor" src={holdingMotion} />
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:px-8">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Full Room Coverage and Flexible Install</h2>
+                
+                <p class="text-[#58585B] text-center text-sm leading-6 xl:leading-7 md:text-left " >Detects movement within 45 feet. The detector has a 90 degree field of vision, giving you a large range of coverage when positioned in a corner. The sensor is shaped to stand on a shelf, stick to a wall, or fit in a corner for maximum room coverage. By default, the sensor is active only in "away" mode (so you won't trigger it when you are at home) or you can set the sensor to “arm in stay” arming it in both "stay" and "away" modes (for rooms that you want covered with a motion sensor while you're home).</p>
+            </div>
+
+        </div>
+
+        <ProductSubMenu client:load path="/products/motion-sensors" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full flex flex-col items-center bg-[#297CA3] gap-4 px-4 py-12">
+
+            <h2 class="text-white text-5xl font-medium text-center">How it works</h2>
+            <p class="text-white text-center text-lg" >Securing your home has never been easier</p>
+
+            <div class="w-full flex flex-col items-center gap-8 md:gap-0 md:flex-row justify-between px-2 py-4">
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Request a Quote</h3>
+
+                    <p class="text-white text-sm text-center">Our home security professionals help you get exactly what you need and always give you the best price.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Setup Your System</h3>
+
+                    <p class="text-white text-sm text-center">When your package arrives, follow the setup instructions. It takes less than 10 minutes.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Stay Safe</h3>
+
+                    <p class="text-white text-sm text-center">You will have 24/7 monitoring and support. If you ever need help, just call.</p>
+
+                </div>
+
+            </div>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] hover:scale-105 transition duration-100 py-1 px-6 rounded-3xl border-2 z-10 border-white">
+                <p class="text-white text-[15px]">Call Now</p>
+            </a>
+
+        </div>
+
+        <Footer />
+
+    </body>
+</html>

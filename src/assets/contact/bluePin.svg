@@ -1,0 +1,21 @@
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,0 C6.5,0 2,4.5 2,10 C2,17.4 11.1,23.6 11.4,23.8 C11.6,23.9 11.8,24 12,24 C12.2,24 12.4,23.9 12.6,23.8 C12.9,23.6 22,17.4 22,10 C22,4.5 17.5,0 12,0 Z M12,21.8 C10.1,20.4 4,15.4 4,10 C4,5.6 7.6,2 12,2 C16.4,2 20,5.6 20,10 C20,15.4 13.9,20.4 12,21.8 Z M12,6 C9.8,6 8,7.8 8,10 C8,12.2 9.8,14 12,14 C14.2,14 16,12.2 16,10 C16,7.8 14.2,6 12,6 Z M12,12 C10.9,12 10,11.1 10,10 C10,8.9 10.9,8 12,8 C13.1,8 14,8.9 14,10 C14,11.1 13.1,12 12,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="contact" transform="translate(-152.000000, -545.000000)">
+            <g id="contact-info" transform="translate(150.000000, 398.000000)">
+                <g id="icon-/-map-pin" transform="translate(0.000000, 147.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="color-/-blue" mask="url(#mask-2)" fill="#297CA3" fill-rule="evenodd">
+                        <rect id="↳-🎨Color" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

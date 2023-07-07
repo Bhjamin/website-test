@@ -1,0 +1,47 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import alderBuilding from '../assets/careers/newBuilding-Opt.jpg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="We are experiencing rapid growth in a growing industry. We're looking for hard working individuals with a desire to grow with us and start their Alder career." />
+		<title>Careers | Alder Home Security</title>
+	</head>
+	<body class="bg-[#F1F1F2] flex flex-col justify-center">
+
+        <Header client:load path='/careers' />
+        <div class="w-full flex flex-col md:flex-row">
+
+            <div class={`w-full flex h-[300px] sm:h-[500px] md:w-1/2 bg-center bg-cover`} style={{
+                backgroundImage: `url(${alderBuilding})`
+            }}>
+                <div class="w-full flex flex-col items-center p-8 gap-8 justify-end h-full bg-neutral-800/[.30]">
+                    
+                    <h3 class="text-white text-5xl sm:text-7xl lg:text-8xl text-center font-medium">Alder Corporate</h3>
+                    
+                    <a href="/corporate" class="text-[#297CA3] bg-white hover:bg-neutral-200 hover:scale-105 transition duration-100 shadow-lg rounded-full px-8 py-2 ">View Positions</a>
+                    
+                </div>
+            </div>
+
+            <div class="w-full h-[300px] sm:h-[500px] flex flex-col items-center p-8 gap-8 justify-end md:w-1/2 bg-center bg-cover bg-[url('https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1546557300/binder-blue.jpg')]">
+
+                <h3 class="text-white text-5xl sm:text-7xl lg:text-8xl text-center font-medium">Alder Sales</h3>
+                    
+                <a href="/sales" class="text-[#297CA3] bg-white hover:bg-neutral-200 hover:scale-105 transition duration-100 shadow-lg rounded-full px-8 py-2 ">View Positions</a>
+
+            </div>
+
+        </div>
+        <Footer/>
+
+    </body>
+</html>

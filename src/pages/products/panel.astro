@@ -1,0 +1,785 @@
+---
+import Header from "../../components/Header";
+import ProductHeader from "../../components/ProductHeader";
+import ProductSubMenu from "../../components/ProductSubMenu";
+import Footer from "../../components/Footer";
+import RequestQuoteForm from "../../components/RequestQuoteForm";
+import whitePhone from "../../assets/white-phone.svg";
+import Tools from "../../assets/panel/tools.svg";
+import Rule from "../../assets/panel/rule.svg";
+import Message from "../../assets/panel/message.svg";
+import Clock from "../../assets/panel/PanelClock.svg";
+import Card from "../../assets/panel/card.svg";
+import Antena from "../../assets/panel/antena.svg";
+import Coin from "../../assets/panel/coin.svg";
+import ReverseArrows from "../../assets/panel/reverse-arrows.svg";
+import MobilePhone from "../../assets/panel/mobile-phone.svg";
+import Battery from "../../assets/panel/battery.svg";
+import SmokeAlarm from "../../assets/panel/smoke-alarm.svg";
+import BlueCheck from "../../assets/panel/blue-check.svg";
+import DarkCheck from "../../assets/panel/dark-check.svg";
+import AlderLogo from "../../assets/alder-logo.svg";
+import AdtLogo from "../../assets/panel/adt-logo.svg";
+import frontpointLogo from "../../assets/panel/frontpoint-logo.svg";
+import brinksLogo from "../../assets/panel/brinks-logo.svg";
+import simplisafeLogo from "../../assets/panel/simplisafe-logo.svg";
+import vivintLogo from "../../assets/panel/vivint-logo.svg";
+import twoway from "../../assets/panel/two-way.svg";
+import animation from "../../assets/panel/panelPageAnimation.gif";
+import AlderSimple from "../../components/panel-page-components/AlderSimple";
+import PanelFAQ from "../../components/panel-page-components/PanelFAQ";
+import simplePanel from "../../assets/panel/simple-panel.svg";
+import ScrollButtons from "../../components/panel-page-components/ScrollButtons";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../AlderFavicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="No matter where you are, stay connected to your home with your phone. Confidently protect what matters most with Alder’s total home security systems."
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Home Security Panel | Alder Home Security</title>
+  </head>
+  <body class="bg-white flex flex-col items-center justify-center">
+    <Header client:load path="/products/panel" />
+
+    <ProductHeader path="/products/panel" />
+
+    <br />
+
+    <div
+      class="w-full max-w-7xl h-[430px] bg-center bg-cover"
+      style={{
+        backgroundImage: `url(https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1547764880/screenshot.png)`,
+        backgroundPosition: "50% 40%",
+      }}
+    >
+      <div
+        class="w-full h-full flex flex-col items-center justify-center gap-6 px-6 bg-[#24586ed9]/[.5]"
+      >
+        <h1 class="text-white text-4xl text-center sm:text-6xl font-medium">
+          See Alder Simple in action
+        </h1>
+
+        <a
+          href="tel:800-710-1289"
+          class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] hover:scale-105 transition duration-100 h-10 w-48 rounded-3xl border-2 z-10 border-white"
+        >
+          <img alt="phone icon" src={whitePhone} />
+          <p class="text-white text-[15px]">Call Now for a Quote</p>
+        </a>
+      </div>
+    </div>
+    <ScrollButtons client:load />
+
+    <div class="w-full flex flex-col items-center gap-4 py-6">
+      <h2 class="text-[#58585B] text-4xl text-center font-medium">
+        Test drive the Simple Panel
+      </h2>
+      <p class="text-[#58585B] text-3xl text-center">
+        and see how easy it is to use
+      </p>
+
+      <div
+        id="panel-demo"
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          paddingTop: "10px",
+          height: "600px",
+          width: "90%",
+        }}
+      >
+        <iframe
+          title="alder security panel interactive demo"
+          src="https://s.tiled.co/0P-fIa5/simple-panel-demo"
+          id="iframe"
+          allowfullscreen="true"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100%",
+            border: "0",
+          }}></iframe>
+      </div>
+    </div>
+
+    <RequestQuoteForm client:load bg_color="bg-[#58585B]" />
+
+    <div
+      id="comparison"
+      class="w-full flex bg-[#F1F1F2] flex-col items-start lg:items-center px-4 py-16"
+    >
+      <h2 class="text-[#58585B] text-3xl md:text-4xl text-center font-medium">
+        See how Alder stacks up against the competition*
+      </h2>
+
+      <br />
+      <br />
+
+      <div class="flex w-full justify-start lg:justify-center overflow-x-auto">
+        <div class="w-[896px] shadow-2xl bg-white grid grid-cols-7 md:grid-cols-8 flex-shrink-0">
+          <div class=" col-span-1 md:col-span-2 h-16 bg-[#F1F1F2]"></div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#297CA3]">
+            <img class="w-[80%]" src={AlderLogo} alt="alder logo" />
+          </div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#F1F1F2]">
+            <img class="w-[35%]" src={AdtLogo} alt=" ADT logo" />
+          </div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#F1F1F2]">
+            <img class="w-[45%]" src={frontpointLogo} alt=" front point logo" />
+          </div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#F1F1F2]">
+            <img class="w-[70%]" src={brinksLogo} alt="brinks logo" />
+          </div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#F1F1F2]">
+            <img class="w-[70%]" src={simplisafeLogo} alt="simpli safe logo" />
+          </div>
+
+          <div class="flex justify-center items-center p-1 h-16 bg-[#F1F1F2]">
+            <img class="w-[70%]" src={vivintLogo} alt="vivint logo" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Tools} alt=" tools " />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Flexible DIY Installtion
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Rule} alt="ruler" />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              7" Touchscreen
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img
+              class="w-[15%] "
+              src={Message}
+              alt="chat messages"
+            />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Cellular Panel with 2-way Talk
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Clock} alt="clock" />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              24/7 Monitoring and Support
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Card} alt="credit card" />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Qualify all Credit Scores
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img
+              class="w-[15%] "
+              src={Antena}
+              alt="cellular antena"
+            />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              4G LTE Cellular Connection
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Coin} alt="a coin" />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Installation Cost
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <p class="text-[#58585B] text-base font-medium">
+              $0
+            </p>
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <p class="text-[#58585B] text-base">$99 - $199</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <p class="text-[#58585B] text-base">$0</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <p class="text-[#58585B] text-base">$0</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <p class="text-[#58585B] text-base">$0</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <p class="text-[#58585B] text-base">$49 - $199</p>
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img
+              class="w-[15%] "
+              src={ReverseArrows}
+              alt="reversed arrows"
+            />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Mount on a wall or rest on counter
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img
+              class="w-[15%] "
+              src={MobilePhone}
+              alt="mobile phone"
+            />
+            <p class="text-[#58585B] text-[8px] md:text-sm font-medium">
+              Remote Arm/Disarm Mobile App Included
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img class="w-[15%] " src={Battery} alt="battery" />
+            <p class="text-[#58585B] text-[10px] md:text-sm font-medium">
+              Backup Battery
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="col-span-1 md:col-span-2 h-16 bg-white flex items-center border-b-[1px] gap-4 p-2 md:p-4"
+          >
+            <img
+              class="w-[15%] "
+              src={SmokeAlarm}
+              alt="smoke alarm"
+            />
+            <p class="text-[#58585B] text-[8px] md:text-sm font-medium">
+              Monitoring response for smoke and CO alrams
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center h-16 bg-[#F1F1F2]">
+            <img class="w-[20%]" src={BlueCheck} alt="blue check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+
+          <div
+            class="flex justify-center items-center h-16 bg-white border-r-[1px]"
+          >
+            <img class="w-[20%]" src={DarkCheck} alt="check mark" />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full max-w-4xl flex flex-col pt-8 items-end">
+        <p class="text-[#58585B] text-[10px]">*Comparing standard systems.</p>
+        <p class="text-[#58585B] text-right text-[8px] w-[175px]">
+          Information sourced in September 2019 from the following websites:
+          www.adt.com, www.vivint.com, www.simplisafe.com,
+          www.frontpointsecurity.com, www.brinkshome.com
+        </p>
+      </div>
+    </div>
+
+    <div id="two-way" class="w-full bg-white py-4">
+      <img
+        class="w-[100%] h-[350px]"
+        src={twoway}
+        alt="people communicating through alders security panel"
+      />
+    </div>
+
+    <div class="w-full flex flex-col items-center py-8 gap-4">
+      <h2 class="text-[#58585B] text-3xl sm:text-4xl font-medium">
+        Install Anywhere
+      </h2>
+      <p class="text-[#58585B] text-xl sm:text-2xl font-medium">
+        wall or tabeltop
+      </p>
+
+      <img
+        alt=" alder panel in different spots throughout a house "
+        class="w-[430px] max-lg:max-h-[320px] lg:w-[940px] lg:h-[550px] rounded-md"
+        src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1567201275/wall-table-animation-2.gif"
+      />
+    </div>
+
+    <div class="w-full max-w-5xl flex flex-col items-center gap-4 py-8">
+      <h2 class="text-[#58585B] text-center text-3xl sm:text-4xl font-medium">
+        Stay connected and protected
+      </h2>
+      <p class="text-[#58585B] text-center text-xl sm:text-2xl font-medium">
+        with wireless and cellular security.
+      </p>
+
+      <div class="flex flex-col md:flex-row w-full items-center px-4">
+        <div class="flex flex-col py-8 md:py-0 w-full md:w-[55%] gap-4">
+          <p
+            class="text-base sm:text-xl text-[#58585B] text-center md:text-left font-medium"
+          >
+            4G cellular powered with battery backup. We're prepared to protect
+            you.
+          </p>
+
+          <p class="text-sm sm:text-lg text-[#58585B] text-center md:text-left">
+            Safety shouldn't be compromised. That's why we build security
+            systems that can't be fooled. Stay connected 24/7 with Alder
+            Security.
+          </p>
+        </div>
+
+        <img
+          class="w-full xs:w-[75%] md:w-[45%] h-[350px]"
+          alt="alder home security animation"
+          src={animation}
+        />
+      </div>
+    </div>
+
+    <ProductSubMenu path="/products/panel" />
+
+    <br />
+    <br />
+
+    <AlderSimple client:load />
+
+    <div id="FAQ" class="w-full flex justify-center">
+      <PanelFAQ client:load />
+    </div>
+
+    <div
+      id="details"
+      class="w-full max-w-7xl flex flex-col items-center gap-12 md:gap-0 md:justify-evenly md:flex-row px-6 py-12"
+    >
+      <img
+        class="w-full md:w-[45%]"
+        src={simplePanel}
+        alt="alder home security panel"
+      />
+
+      <div class="w-full md:w-[45%] flex flex-col items-center">
+        <h2 class="text-[#58585B] text-3xl font-medium">Item Details</h2>
+
+        <br />
+
+        <div
+          class="w-full h-16 border-b-[1px] border-[#58585B] flex items-center justify-between"
+        >
+          <p class="text-[#58585B] font-medium text-xs xs:text-base">
+            Product Dimensions
+          </p>
+
+          <p class="text-[#58585B] text-xs xs:text-base text-right">
+            5 x 9 x 1.25 inches
+          </p>
+        </div>
+
+        <div
+          class="w-full h-16 border-b-[1px] border-[#58585B] flex items-center justify-between"
+        >
+          <p class="text-[#58585B] font-medium text-xs xs:text-base">
+            Product Weight
+          </p>
+
+          <p class="text-[#58585B] text-xs xs:text-base text-right">
+            14.5 ounces
+          </p>
+        </div>
+
+        <div
+          class="w-full h-16 border-b-[1px] border-[#58585B] flex items-center justify-between"
+        >
+          <p class="text-[#58585B] font-medium text-xs xs:text-base">
+            Primary Power Source
+          </p>
+
+          <p class="text-[#58585B] text-xs xs:text-base text-right">AC Power</p>
+        </div>
+
+        <div
+          class="w-full h-16 border-b-[1px] border-[#58585B] flex items-center justify-between gap-8"
+        >
+          <p class="text-[#58585B] font-medium text-xs xs:text-base">
+            24 Hour Backup Batteries
+          </p>
+
+          <p class="text-[#58585B] text-xs xs:text-base text-right">
+            Rechargeable Lithium Ion
+          </p>
+        </div>
+
+        <div
+          class="w-full h-16 border-b-[1px] border-[#58585B] flex items-center justify-between"
+        >
+          <p class="text-[#58585B] font-medium text-xs xs:text-base">
+            Warranty
+          </p>
+
+          <p class="text-[#58585B] text-xs xs:text-base text-right">
+            Limited Lifetime Warranty
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </body>
+</html>

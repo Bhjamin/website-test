@@ -1,0 +1,410 @@
+---
+import blueLogo from "../../assets/blueLogo.svg";
+import installCameras from "../../assets/lp/camera-to-wall.png";
+import RequestQuoteFormLP from "../../components/landing-page-components/RequestQuoteFormLP";
+import RequestQuoteForm from "../../components/RequestQuoteForm";
+import compChart from "../../assets/lp/nvrTableSVG.svg";
+import Footer from "../../components/Footer";
+import NvrVideo from "../../components/landing-page-components/NvrVideo";
+import nvrAsset1 from '../../assets/lp/newNVRAsset1.svg'
+import nvrAsset2 from '../../assets/lp/newNVRAsset2.svg'
+import upto from "../../assets/lp/8cameras.png";
+import twoK from "../../assets/lp/2k.png";
+import AI from "../../assets/lp/AI.png";
+import audio from "../../assets/lp/audio.png";
+import nightVision from "../../assets/lp/nightVision.png";
+import siren from "../../assets/lp/siren.png";
+import alert from "../../assets/lp/alerts.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../AlderFavicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Protect your home and loved ones with Alder’s easy to use home security systems. Other alarm systems just don’t compare to everything you get with Alder."
+    />
+    <title>Home Security Systems | Alder Home Security</title>
+  </head>
+  <body class="bg-white flex flex-col items-center">
+    <header
+      class="w-full sticky z-50 top-0 h-20 bg-white shadow-lg flex items-center justify-between px-4 sm:px-12"
+    >
+        <img class="h-8 xs:h-12" src={blueLogo} alt="alder logo" />
+      
+
+      <div class="flex flex-col lg:flex-row lg:gap-4 items-center">
+        <p
+          class="text-[#007DA7] hidden sm:flex font-medium text-base lg:text-lg"
+        >
+          Call now to customize a home security package.
+        </p>
+
+        <a
+          href="tel:800.710.1289"
+          class="px-2 py-1 xs:px-4 xs:py-[6px] rounded-full flex justify-center items-center gap-2 bg-[#297CA3] hover:bg-[#21698a] hover:scale-105 hover:-translate-y-[2px] hover:shadow-xl transition duration-100"
+        >
+          <p class="text-sm xs:text-base font-medium text-white">
+            800.710.1289
+          </p>
+        </a>
+      </div>
+    </header>
+
+    <div
+      class="w-full bg-[#34404A] z-30 flex flex-col justify-center items-center p-4 gap-4"
+    >
+      <h1
+        class="text-white text-center text-2xl font-serif xxs:text-3xl sm:text-5xl lg:text-3xl xl:text-5xl font-medium"
+      >
+        Alder Security Cameras
+      </h1>
+      <p
+        class="text-white text-center text-lg sm:text-2xl lg:text-xl xl:text-3xl"
+      >
+        Professional. Hardwired. Cameras.
+      </p>
+
+      <p
+        class="text-[#83B6C8] w-[95%] lg:w-[75%] text-sm leading-5 sm:text-lg lg:text-sm xl:text-lg font-medium text-center my-4"
+      >
+        Alder is now offering commercial grade cameras in select locations
+        throughout the country. All camera systems will come with a free
+        professional installation. These cameras are in demand and our
+        technicians are getting booked up fast.
+      </p>
+
+      <p class="text-white text-xl font-medium text-center">
+        Call for a Free Quote
+      </p>
+
+      <a
+        href="tel:800.710.1289"
+        class="px-8 xs:py-2 rounded-full flex justify-center items-center gap-2 text-white font-medium bg-[#297CA3] hover:bg-[#21698a] hover:scale-105 hover:-translate-y-[2px] hover:shadow-xl transition duration-100"
+      >
+      800.710.1289
+      </a>
+    </div>
+
+    <NvrVideo client:load />
+
+    <RequestQuoteFormLP bg_color="bg-[#F6F9FB]" font="font-serif" button_color="bg-[#297CA3] hover:bg-[#21698a]" client:load />
+
+    <div
+      class="w-full flex flex-col items-center p-4 lg:p-8 bg-white max-w-[1475px]"
+    >
+      <div class="w-full flex flex-col items-center gap-4 lg:gap-0 lg:flex-row">
+        <div class="w-full lg:w-[50%] flex justify-center">
+          <img
+          class="w-[90%] rounded-lg lg:rounded-none"
+          src={nvrAsset1}
+          alt="man monitoring security camera feed through mobile app"
+          />
+        </div>
+
+        <div
+          class="w-full lg:w-[50%] h-full flex flex-col justify-start py-2 lg:px-4 gap-6"
+        >
+          <h2
+            class="text-black text-xl xs:text-3xl lg:text-2xl xl:text-3xl w-full text-left font-serif font-medium"
+          >
+            Professional Cameras. Affordable Price.
+          </h2>
+
+          <div class="flex flex-col w-full gap-4">
+            <h3 class="text-black text-lg xl:text-xl font-medium">
+              Full HD Cameras
+            </h3>
+            <p class="text-black lg:text-sm xl:text-base">
+              These cameras are all Full HD quality. This means that you’re
+              getting crystal clear commercial grade camera quality. If you ever
+              need to watch the cameras back to see what happened, you can see
+              all the detail you’d hope for.
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full gap-4">
+            <h3 class="text-black text-lg xl:text-xl font-medium">
+              Phone and TV Connectivity
+            </h3>
+            <p class="text-black lg:text-sm xl:text-base">
+              These cameras can connect to your phone through the wifi at your
+              home, this way you can watch them no matter where you are. You can
+              also have these cameras hooked up to the TV and get a full movie
+              sized picture of the situation.
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full gap-4">
+            <h3 class="text-black text-lg xl:text-xl font-medium">
+              Human Detection Notification
+            </h3>
+            <p class="text-black lg:text-sm xl:text-base">
+              The detection system can alert you anytime there is a person in
+              the camera’s field of vision. This way you never have to worry
+              about anyone coming on your property without you knowing about it.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="w-full flex flex-col-reverse items-center gap-4 lg:gap-0 lg:flex-row">
+        <div
+          class="w-full lg:w-[50%] h-full flex flex-col justify-start py-2 lg:px-4 gap-8"
+        >
+          <h2
+            class="text-black text-xl xs:text-3xl lg:text-2xl xl:text-3xl w-full text-left font-serif font-medium"
+          >
+            24/7 Recording. Always Ready.
+          </h2>
+
+          <div class="flex flex-col w-full gap-4">
+            <h3
+              class="text-black text-lg xl:text-xl font-medium"
+            >
+              Cloud and Hard Disk Storage
+            </h3>
+            <p class="text-black lg:text-sm xl:text-base">
+              Your system will also come with Cloud and Hard Disk Storage. This
+              means that you will have your video saved on your hard disk
+              storage for long periods of time, it is always there if you need
+              to access it. But on top of that, you’ll also have the cloud
+              monitoring to access and save video files no matter where you are.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[50%] flex justify-center">
+          <img
+          class="w-[90%] rounded-lg lg:rounded-none"
+          src={nvrAsset2}
+          alt="Alder rep behind an alder security lawn sign"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col lg:flex-row gap-4 bg-[#f5f9fb]">
+
+      <div class="w-full lg:w-1/2 flex flex-col py-8 px-8 sm:px-16 lg:px-8">
+        <h2 class="text-[#58585B] font-medium text-3xl mb-2">
+          Item Details
+        </h2>
+
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Product Dimensions
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            295 x 228 x 55mm
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Video Resolution
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            1440p HD
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Field of View
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            120° Wide Angle
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Night Vision
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            Up to 115ft / 35ft (total darkness)
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Smart Device Support
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            Apple iOS & Android
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Lens Material
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            All-glass lens
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10 border-x-0 border-t-0 border-b-[1px] border-dashed border-[#58585B]"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            On-board Storage
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            Micro SD slot, up to 256GB
+          </p>
+        </div>
+        <div
+          class="w-full flex justify-between gap-8 items-center h-10"
+        >
+          <p
+            class="text-[#58585B] text-xs xs:text-base font-medium mb-0"
+          >
+            Weatherproof
+          </p>
+          <p
+            class="text-[#58585B] text-xs xs:text-base text-right font-light mb-0"
+          >
+            IP66 (dust & powerful water jets)
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 max-w-7xl py-8 px-8 sm:px-16 lg:px-8 flex flex-col items-center ">
+        <h2
+          class="text-[#58585B] text-4xl font-medium w-full text-center sm:text-left mb-0"
+        >
+          Smart Features Overview
+        </h2>
+
+        <br />
+
+        <div class="w-full flex flex-wrap gap-2 justify-start flex-row pl-4 xxs:pl-8 xs:pl-0 ">
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={upto} alt="eight cameras" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                Up to 8 Cameras
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={twoK} alt=" 2k resolution monitor " />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                2x Clearer than 1080p
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={AI} alt="AI detection system icon" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                Advanced AI Technology
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={audio} alt=" two-way speaker/microphone" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                2-Way Audio
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={nightVision} alt="half moon with stars" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                Color Night Vision
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={siren} alt="flashing siren" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                Prevent Crime
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center xs:w-[45%]">
+            <div
+              class="flex flex-row gap-4 items-center justify-start w-full h-14"
+            >
+              <img src={alert} alt="notification bell" />
+              <p class="text-[#58585B] font-bold text-xs md:text-sm xl:text-base mb-0">
+                Smart Alerts
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <RequestQuoteForm client:load bg_color="bg-[#34404A]" button_color="bg-[#297CA3] hover:bg-[#21698a]" header={2} />
+
+    <Footer />
+  </body>
+</html>

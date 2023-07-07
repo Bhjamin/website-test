@@ -1,0 +1,21 @@
+---
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Sales from '../components/sales-page-components/Sales'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Are you looking to make money with Alder Security Sales? We're looking for hard working individuals with a desire to grow with us." />
+		<title>Alder Security Sales | Alder Home Security</title>
+	</head>
+	<body class="bg-slate-400 flex flex-col justify-center">
+
+        <Sales client:only />
+        
+    </body>
+</html>

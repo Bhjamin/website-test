@@ -1,0 +1,411 @@
+---
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import nvrBanner from "../assets/nvr-camera/nvrBanner.png";
+import NeverMiss from "../components/nvr-camera-components/NeverMiss";
+import upto from "../assets/nvr-camera/8cameras.png";
+import twoK from "../assets/2k.png";
+import AI from "../assets/AI.png";
+import audio from "../assets/audio.png";
+import nightVision from "../assets/nightVision.png";
+import siren from "../assets/siren.png";
+import alert from "../assets/alerts.png";
+import RequestQuoteForm from "../components/RequestQuoteForm";
+import intelligentAlerts from "../assets/nvr-camera/intelligentAlerts.png";
+import securityMonitor from "../assets/nvr-camera/securityMonitor.png";
+import googlePlay from "../assets/googlePlayColor.svg";
+import appStore from "../assets/appleStoreColor.svg";
+import moonAndClouds from "../assets/nvr-camera/fullColorNightVision.png";
+import cameraLocations from '../assets/nvr-camera/cameraLocations.png'
+import GettingStarted from '../components/nvr-camera-components/GettingStarted'
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Monitoring your home has never been more important. Alder’s indoor security camera provides necessary safety solutions to whatever threats may come to your door."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+        <Header client:load path="/nvr-camera" />
+
+        <div
+            class="w-full h-[475px] bg-cover bg-center bg-no-repeat"
+            id="banner"
+            style={`background-image: url(${nvrBanner})`}
+        >
+            <style>
+                /* @media (max-width: 768px) {
+                #banner {
+                    background-position-x: -100px;
+                }
+            }
+
+            @media (max-width: 640px) {
+                #banner {
+                    background-position-x: -300px;
+                }
+            }
+
+            @media (max-width: 540px) {
+                #banner {
+                    background-position-x: -375px;
+                }
+            } */
+            </style>
+        </div>
+
+        <NeverMiss client:load />
+
+        <div class="w-full max-w-7xl px-8 flex flex-col items-center py-12">
+            <h2
+                class="text-[#58585B] text-4xl font-medium w-full text-center lg:text-left"
+            >
+            Smart Features Overview
+            </h2>
+
+            <br />
+
+            <div class="w-full flex flex-wrap gap-0 xs:gap-6 justify-start xs:justify-center lg:justify-start flex-row pl-4 xxs:pl-8 xs:pl-0 ">
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={upto} alt="eight cameras" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Up to 8 Cameras
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={twoK} alt=" 2k resolution monitor " />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2x Clearer than 1080p
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={AI} alt="AI detection system icon" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Advanced AI Technology
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={audio} alt=" two-way speaker/microphone" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2-Way Audio
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={nightVision} alt="half moon with stars" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Color Night Vision
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={siren} alt="flashing siren" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Prevent Crime
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={alert} alt="notification bell" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Smart Alerts
+                    </p>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <RequestQuoteForm client:load bg_color="bg-[#60798F]" />
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div
+                class="w-full flex flex-col items-center lg:flex-row lg:items-stretch px-6 pt-8 lg:p-0"
+            >
+                <img
+                    src={intelligentAlerts}
+                    class="xs:w-3/5 lg:w-1/2 shadow-xl lg:shadow-none"
+                    alt="parent monitoring kids through security app"
+                />
+
+                <div
+                    class="lg:w-1/2 flex flex-col items-center lg:items-start p-0 lg:px-12 py-8 gap-4"
+                >
+                    <h2 class="text-[#58585B] text-3xl text-center font-medium">
+                        Intelligent Alerts Delivered Right to Your Smartphone
+                    </h2>
+
+                    <p class="text-[#58585B] text-[11px] font-medium leading-6">
+                        The Alder NVR 2K Professional Security System lets you
+                        view your world in more detail with realtime 4MP QHD
+                        recording. The NVR’s Power over Ethernet ports makes
+                        setup quick and easy, with one cable installation per
+                        camera that provides power and HD video. Wide 120° angle
+                        lenses provide extensive video coverage from every
+                        camera. Intelligent AI technology knows the dierence
+                        between a person and a vehicle for more reliable
+                        monitoring and fewer false alarms. Personalize what you
+                        get notified of & create custom activity zones to ensure
+                        you only get accurate alerts for what matters most and
+                        see what’s happening with 2K incredible video from
+                        anywhere, with total peace of mind in the palm of your
+                        hand. Know what’s happening on intelligent devices
+                        through the free Homeguardsafe app with this QHD 2K
+                        security system to suit homes, offices, small businesses &
+                        retail stores.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href='https://itunes.apple.com/us/app/alder-security/id1267996005?mt=8'> <img class="h-12" src={appStore} alt='apple app store logo' /> </a>
+                    <a href='https://play.google.com/store/apps/details?id=com.securenettech.alder6production'> <img class="h-12" src={googlePlay} alt='google play store logo' /> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full flex flex-col-reverse items-center lg:flex-row lg:items-stretch py-8 px-4 lg:p-0"
+            >
+                <div class="w-full lg:w-1/2 flex flex-col p-0 lg:px-12 lg:py-8">
+                    <h2 class="text-[#58585B] font-medium text-3xl mb-">
+                        Item Details
+                    </h2>
+
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Product Dimensions
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            295 x 228 x 55mm
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Video Resolution
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            1440p HD
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Field of View
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            120° Wide Angle
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Night Vision
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Up to 115ft / 35ft (total darkness)
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Smart Device Support
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Apple iOS & Android
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Lens Material
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            All-glass lens
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            On-board Storage
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Micro SD slot, up to 256GB
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between gap-8 items-center h-10"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Weatherproof
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            IP66 (dust & powerful water jets)
+                        </p>
+                    </div>
+                </div>
+
+                <img
+                    class="xs:w-3/5 hidden lg:flex lg:w-1/2 max-h-[450px]"
+                    src={securityMonitor}
+                    alt="monitor showing 4 live security camera feeds"
+                />
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center bg-[#49586A]">
+            <div
+                class="w-full max-w-6xl bg-[#49586A] py-12 px-4 md:px-20 flex flex-col items-center md:items-start"
+            >
+                <h2 class="text-white text-3xl font-medium text-center">
+                    Full Color Night Vision <img
+                        class="h-14 w-14 inline-flex md:relative md:right-[380px]"
+                        src={moonAndClouds}
+                        alt="half moon wth clouds"
+                    />
+                </h2>
+
+                <div class="w-full flex flex-row justify-between gap-12">
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        Full color night vision technology is a game-changer in
+                        low-light environments. With this innovative technology,
+                        you can see people, objects, and activity as if it were
+                        daytime, even in complete darkness. This technology uses
+                        advanced sensors and image processing algorithms to
+                        capture and display vibrant colors,
+                    </p>
+
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        sharp details, and accurate motion. The result is an
+                        immersive and realistic night-time viewing experience
+                        that is as clear and detailed as daytime footage.
+                        Overall, this technology oers a valuable tool for a wide
+                        range of industries and applications, improving safety,
+                        security, and effciency.
+                    </p>
+
+                    <p
+                        class="text-white w-full text-sm flex sm:hidden leading-7"
+                    >
+                        Full color night vision technology is a game-changer in
+                        low-light environments. With this innovative technology,
+                        you can see people, objects, and activity as if it were
+                        daytime, even in complete darkness. This technology uses
+                        advanced sensors and image processing algorithms to
+                        capture and display vibrant colors, sharp details, and
+                        accurate motion. The result is an immersive and
+                        realistic night-time viewing experience that is as clear
+                        and detailed as daytime footage. Overall, this
+                        technology oers a valuable tool for a wide range of
+                        industries and applications, improving safety, security,
+                        and effciency.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl flex flex-col gap-4 lg:gap-0 items-center lg:flex-row justify-center pt-8 lg:pt-0 ">
+
+            <img class=" w-[250px] md:w-1/3 lg:min-h-[510px] lg:w-1/2" src={cameraLocations} alt="birds eye view of house that shows the placement of all security cameras" />
+
+            <div class=" w-full lg:w-1/2 px-4 sm:px-12 py-8 flex flex-col gap-4">
+
+                <h2 class="text-[#58585B] text-4xl font-medium text-center lg:text-start" >Peace of Mind 24/7</h2>
+
+                <p class="text-[#58585B] text-xs leading-6">Experience total peace of mind 24/7, 365 days a year with The Alder NVR 2K Professional Security
+                    System. Customize the size of your camera system to fit your home’s specific needs, and enjoy realtime 4MP QHD recording with wide 120° angle lenses for extensive coverage. With intelligent AI
+                    technology, you’ll get reliable monitoring with fewer false alarms by distinguishing between people
+                    and vehicles. The system is fully customizable, with controllable sensor spotlights and custom activity
+                    zones, ensuring you only receive accurate alerts for what matters most. Stay connected and informed
+                    with 2K incredible video accessible from anywhere via the free Homeguardsafe app. You can deter
+                    potential intruders with the system’s advanced features, including two-way audio, motion-activated
+                    sensor warning spotlights, and a powerful 90dB+ siren. The fully weatherproof (IP66) spotlight
+                    cameras with color night vision up to 82ft/25m in ambient lighting make it an excellent fit for homes,
+                    offices, small businesses, and retail stores. With the NVR’s Power over Ethernet ports, installation is
+                    quick and easy, with one cable installation per camera providing both power and HD video.</p>
+
+            </div>
+
+        </div>
+
+        <GettingStarted client:load />
+
+        <Footer />
+    </body>
+</html>

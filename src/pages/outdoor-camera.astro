@@ -1,0 +1,406 @@
+---
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import outdoorBanner from "../assets/Rectangle44.png";
+import CaptureEveryDetail from "../components/outdoor-camera-components/CaptureEveryDetail";
+import activity from "../assets/outdoor-camera/activity.png";
+import twoK from "../assets/2k.png";
+import AI from "../assets/AI.png";
+import audio from "../assets/audio.png";
+import nightVision from "../assets/nightVision.png";
+import siren from "../assets/siren.png";
+import alert from "../assets/alerts.png";
+import RequestQuoteForm from "../components/RequestQuoteForm";
+import intruder from "../assets/outdoor-camera/intruder.png";
+import appAlert from "../assets/outdoor-camera/appAlert.png";
+import googlePlay from "../assets/googlePlayColor.svg";
+import appStore from "../assets/appleStoreColor.svg";
+import secureStorage from "../assets/outdoor-camera/secureStorage.png";
+import installCamera from '../assets/outdoor-camera/installCamera.png'
+import GettingStarted from '../components/outdoor-camera-components/GettingStarted'
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Monitoring your home has never been more important. Alder’s indoor security camera provides necessary safety solutions to whatever threats may come to your door."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+        <Header client:load path="/outdoor-camera" />
+
+        <div
+            class="w-full h-[400px] bg-cover md:bg-right bg-no-repeat"
+            id="banner"
+            style={`background-image: url(${outdoorBanner})`}
+        >
+            <style>
+                @media (max-width: 768px) {
+                    #banner {
+                        background-position-x: -600px;
+                    }
+                }
+
+                @media (max-width: 640px) {
+                    #banner {
+                        background-position-x: -700px;
+                    }
+                }
+
+                @media (max-width: 520px) {
+                    #banner {
+                        background-position-x: -775px;
+                    }
+                }
+
+                @media (max-width: 440px) {
+                    #banner {
+                        background-position-x: -800px;
+                    }
+                }
+            </style>
+        </div>
+
+        <CaptureEveryDetail client:load />
+
+        <div class="w-full max-w-7xl px-8 flex flex-col items-center py-12">
+            <h2
+                class="text-[#58585B] text-4xl font-medium w-full text-center lg:text-left"
+            >
+                Smart Features Overview
+            </h2>
+
+            <br />
+
+            <div class="w-full flex flex-wrap gap-0 xs:gap-6 justify-start xs:justify-center lg:justify-start flex-row pl-4 xxs:pl-8 xs:pl-0 ">
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={activity} alt="customizable security borders icon" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Activity Zones
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={twoK} alt=" 2k resolution monitor " />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2x Clearer than 1080p
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={AI} alt="AI detection system icon" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        AI Instant Identification
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={audio} alt=" two-way speaker/microphone" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2-Way Audio
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="xs:w-[45%]">    
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={nightVision} alt="half moon with stars" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Full Color Night Vision
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={siren} alt="flashing siren" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Flashing Spotlight & Siren
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]" >
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={alert} alt="notification bell" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Instant Alerts
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <RequestQuoteForm bg_color="bg-[#60798F]" client:load />
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div
+                class="w-full flex flex-col items-center lg:flex-row lg:items-stretch px-6 pt-8 lg:p-0"
+            >
+                <img src={intruder} alt="man getting detected by camera" class="xs:w-3/5 lg:w-1/2" />
+
+                <div
+                    class="lg:w-1/2 flex flex-col items-center lg:items-start p-0 lg:px-12 py-8 gap-4"
+                >
+                    <h2 class="text-[#58585B] text-3xl text-center font-medium">
+                        Protect What Matters to You
+                    </h2>
+
+                    <p class="text-[#58585B] text-[11px] font-medium leading-6">
+                        The eufy SoloCam S40 outdoor camera offers an advanced
+                        level of customization and security, allowing you to
+                        tailor your surveillance system to your specific needs.
+                        With the ability to customize up to 2 smart detection
+                        zones, you have the power to define areas of particular
+                        interest or concern on your property. This feature
+                        ensures that you only receive alerts and notifications
+                        when motion is detected within these designated zones,
+                        reducing false alarms and providing you with a more
+                        focused and efficient monitoring experience. By setting
+                        up these customized detection zones, you gain greater
+                        control over what areas are monitored, such as entry
+                        points, driveways, or high-value objects. This
+                        capability allows you to direct the camera's attention
+                        precisely where it matters most, ensuring that any
+                        suspicious activity within these zones will be promptly
+                        detected and brought to your attention.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href='https://play.google.com/store/apps/details?id=com.securenettech.alder6production&pli=1' target='_blank'><img class="h-12" alt="google play store icon" src={googlePlay} /></a>
+
+                        <a href='https://apps.apple.com/us/app/alder-security/id1267996005' target='_blank'><img class="h-12" alt="app store icon" src={appStore} /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full flex flex-col-reverse items-center lg:flex-row lg:items-stretch py-8 px-4 lg:p-0"
+            >
+                <div class="w-full lg:w-1/2 flex flex-col p-0 lg:px-12 lg:py-8">
+                    <h2 class="text-[#58585B] font-medium text-3xl mb-">
+                        Item Details
+                    </h2>
+
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Product Dimensions
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            50 x 85 x 114mm
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Video Resolution
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            2560 x 1440p HD
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Battery Life
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            4 Months
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Night Vision
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Up to 25ft
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Smart Device Support
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Apple iOS & Android
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Lens Material
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            All-glass lens
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            On-board Storage
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Built-in 8GB eMMC
+                        </p>
+                    </div>
+                    <div class="w-full flex justify-between items-center h-10">
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Weatherproof
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            IP67 (dust & water)
+                        </p>
+                    </div>
+                </div>
+
+                <img
+                    class="xs:w-3/5 hidden lg:flex lg:w-1/2 max-h-[450px]"
+                    src={appAlert}
+                    alt="security notification on a phone"
+                />
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center bg-[#49586A] ">
+            <div class="w-full max-w-6xl bg-[#49586A] py-12 px-4 md:px-20 flex flex-col items-center md:items-start">
+                <h2 class="text-white text-3xl font-medium text-center">
+                    Secure Local Storage <img
+                        class="h-14 w-14 inline-flex md:relative md:right-[355px]"
+                        src={secureStorage}
+                        alt="shield witha checkmark"
+                    />
+                </h2>
+
+                <div class="w-full flex flex-row justify-between gap-12">
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        SoloCam offers a robust and secure local storage solution,
+                        ensuring that your video footage remains protected and
+                        easily accessible. With a storage capacity of 8GB,
+                        SoloCam provides ample space to store at least 2 months
+                        worth of recorded footage. This feature eliminates the
+                        need for frequent data transfers
+                    </p>
+
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        or reliance on cloud-based storage solutions, giving you
+                        full control over your video files. To ensure the utmost
+                        security of your stored data, SoloCam employs AES128
+                        encryption. AES (Advanced Encryption Standard) is a
+                        widely recognized and highly secure encryption algorithm
+                        used to safeguard sensitive information.
+                    </p>
+
+                    <p class="text-white w-full text-sm flex sm:hidden leading-7">
+                        SoloCam offers a robust and secure local storage solution,
+                        ensuring that your video footage remains protected and
+                        easily accessible. With a storage capacity of 8GB,
+                        SoloCam provides ample space to store at least 2 months
+                        worth of recorded footage. This feature eliminates the
+                        need for frequent data transfers or reliance on cloud-based storage solutions, giving you
+                        full control over your video files. To ensure the utmost
+                        security of your stored data, SoloCam employs AES128
+                        encryption. AES (Advanced Encryption Standard) is a
+                        widely recognized and highly secure encryption algorithm
+                        used to safeguard sensitive information.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl flex flex-col gap-4 lg:gap-0 items-center lg:flex-row justify-center pt-8 lg:pt-0 ">
+
+            <img class=" w-[250px] md:w-1/3 lg:min-h-[465px] lg:w-1/2" src={installCamera} alt="homeowner installing security camera" />
+
+            <div class=" w-full lg:w-1/2 px-4 sm:px-12 py-8 flex flex-col gap-4">
+
+                <h2 class="text-[#58585B] text-4xl font-medium text-center lg:text-start" >A Breeze to Install</h2>
+
+                <p class="text-[#58585B] text-xs leading-7">The SoloCam outdoor camera by eufy is designed to be incredibly easy to install, providing users with
+                    a hassle-free setup process. With its user-friendly features and intuitive design, you can have your
+                    SoloCam up and running in just a matter of minutes, without the need for professional assistance or
+                    the added expense of hiring a contractor. One of the key advantages of the SoloCam is its wireless
+                    functionality. This means that you don’t have to deal with the complexities of wiring or drilling holes
+                    to connect the camera to a power source. Instead, the camera operates on battery power, allowing
+                    you to place it virtually anywhere on your property. Whether you want to monitor your front porch,
+                    backyard, garage, or any other area, the wire-free design of the SoloCam provides you with the
+                    flexibility to choose the perfect location without any limitations.</p>
+
+            </div>
+
+        </div>
+
+        <GettingStarted client:load />
+
+        <Footer />
+    </body>
+</html>

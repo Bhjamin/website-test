@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="35px" viewBox="0 0 22 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>door icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Simple/Product/Keyfob" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-988.000000, -115.000000)" id="Group-9" stroke="#FFFFFF">
+            <g transform="translate(981.000000, 115.000000)">
+                <g id="door-icon" transform="translate(7.000000, 0.000000)">
+                    <path d="M11.5,32.5 L11.5,0.5 L3,0.5 C1.61928813,0.5 0.5,1.61928813 0.5,3 L0.5,30 C0.5,31.3807119 1.61928813,32.5 3,32.5 L11.5,32.5 Z" id="Rectangle-12"></path>
+                    <path d="M14.5,2.5 L14.5,34.5 L19,34.5 C20.3807119,34.5 21.5,33.3807119 21.5,32 L21.5,5 C21.5,3.61928813 20.3807119,2.5 19,2.5 L14.5,2.5 Z" id="Rectangle-12-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

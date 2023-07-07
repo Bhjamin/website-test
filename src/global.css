@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'GT-Haptik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 200;
+    unicode-range: U+0020-007F;
+    src: url('../../public/fonts/GT-Haptik-alt-Light.woff2') format('woff2'),
+  }
+
+  @font-face {
+    font-family: 'GT-Haptik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    unicode-range: U+0020-007F;
+    src: url('../../public/fonts/GT-Haptik-alt-Regular.woff2') format('woff2'),
+  }
+
+  @font-face {
+    font-family: 'GT-Haptik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    unicode-range: U+0020-007F;
+    src: url('../../public/fonts/GT-Haptik-alt-Medium.woff2') format('woff2'),
+  }

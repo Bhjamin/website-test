@@ -1,15 +1,203 @@
 ---
+import Header from "../components/Header";
+import HomePageBanner from "../components/homepage-components/HomePageBanner";
+import ProtectionQuestions from "../components/ProtectionQuestions";
+import ProductMenu from '../components/ProductMenu'
+import RequestQuoteForm from '../components/RequestQuoteForm'
+import MobileAccess from '../components/MobileAccess'
+import Footer from '../components/Footer'
+import simplyRefined from "../assets/166x88.png";
+import trulyEmpowering from "../assets/98x114.png";
+import allInclusive from "../assets/140x114.png";
+import secureHome1 from "../assets/610x583.png";
+import secureHome2 from "../assets/423x423.png";
+import secureHome3 from "../assets/367x367.png";
+import security from "../assets/index/security-Opt.jpg";
+import medical from "../assets/index/medical-banner-FIT.jpg";
+import fire from "../assets/index/smoke-room-FIT.jpg";
+import whiteArrow from "../assets/whiteArrow.svg"
+import AwardCarousel from '../components/homepage-components/AwardCarousel'
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="../../AlderFavicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="description" content="No matter where you are, stay connected to your home with your phone. Confidently protect what matters most with Alder’s total home security systems."/>
+		<title>Home Security Systems | Alder Home Security</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-slate-400 flex flex-col justify-center">
+
+		<Header client:only />
+
+		<HomePageBanner client:only />
+
+		<div
+			class="w-full z-50 py-8 bg-white flex flex-col items-center lg:flex-row lg:justify-evenly gap-10"
+		>
+			<div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+				<img src={simplyRefined} class="w-[150px] h-[100px]" alt="Home Security Panel Icon" />
+				<h2 class="text-[#58585B] text-xl font-medium">
+					Simply Refined
+				</h2>
+				<p class="text-center text-[#58585b] text-[18px]">
+					Tackling design and manufacturing in-house keeps quality
+					high, costs low and performance reliable. You get the
+					protection you want without the hassle.
+				</p>
+			</div>
+
+			<div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+				<img src={allInclusive} class="w-[150px] h-[100px]" alt="Person with affirming checkmark" />
+				<h2 class="text-[#58585B] text-xl font-medium">
+					All-Inclusive
+				</h2>
+				<p class="text-center text-[#58585b] text-[18px]">
+					Secure your home and keep your security deposit. Our
+					plug-and-play design makes installation a 30-minute cakewalk
+					with no remodeling, rewiring or poking holes.
+				</p>
+			</div>
+
+			<div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+				<img src={trulyEmpowering} class="w-[150px] h-[100px]" alt="Person with headset" />
+				<h2 class="text-[#58585B] text-xl font-medium">
+					Truly Empowering
+				</h2>
+				<p class="text-center text-[#58585b] text-[18px]">
+					Since real emergencies need more than just a siren, we have
+					monitoring teams to dial 911 for you. So you can stay
+					focused on your family and property.
+				</p>
+			</div>
+		</div>
+
+		<div class="w-full py-8 bg-[#4BB1E4] flex flex-col items-center gap-10">
+			<h2 class="text-[#1C1C1D] font-medium text-2xl text-center">
+				Secure Your Home in Three Simple Steps!
+			</h2>
+			<div
+				class="w-full flex flex-col lg:flex-row items-center lg:justify-evenly"
+			>
+				<div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+					<img src={secureHome1} class="w-[182px] h-[182px]" alt="Delivery arriving at a house" />
+					<h2 class="text-[#1C1C1D] text-2xl font-medium">1</h2>
+					<p
+						class="text-center font-medium text-[#1C1C1D] text-[18px]"
+					>
+						Follow our easy step-by-step guide to design your
+						personalized security kit.
+					</p>
+				</div>
+
+				<div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+					<img src={secureHome2} class="w-[182px] h-[182px]" alt="Home security panel" />
+					<h2 class="text-[#1C1C1D] text-2xl font-medium">2</h2>
+					<p
+						class="text-center font-medium text-[#1C1C1D] text-[18px]"
+					>
+						Your package arrives in two days pre-programmed for easy
+						setup in 30 minutes.
+					</p>
+				</div>
+
+				<div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+					<img src={secureHome3} class="w-[182px] h-[182px]" alt="Person with headset" />
+					<h2 class="text-[#1C1C1D] text-2xl font-medium">3</h2>
+					<p
+						class="text-center font-medium text-[#1C1C1D] text-[18px]"
+					>
+						Live in peace for the rest of your days knowing your
+						home is protected by Alder.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full overflow-x-hidden">
+			<ProtectionQuestions client:load />
+		</div>
+
+		<div class="w-full h-full bg-white overflow-x-hidden">
+			<div
+				class="w-full min-h-[340px] lg:max-w-[1020px] md:max-w-[720px] mx-auto bg-white flex flex-col justify-center items-center md:grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-5"
+			>
+				<a
+					href="/home-security"
+					class="lg:w-[500px] lg:h-[325px] md:w-[350px] md:h-[200px] md:rounded-tl-2xl md:overflow-hidden w-3/4 h-40 bg-bottom bg-cover transform transition duration-200"
+					style={{
+						backgroundColor: 'white',
+						backgroundImage: `url(${security})`,
+						}}
+				>
+					<div class=" w-full h-full flex flex-col items-center justify-center gap-2 py-2 px-2 md:px-8 bg-neutral-800/[.30] group ">
+						<h2 class=" font-medium text-white text-3xl md:text-5xl ">Security</h2>
+						<p class=" text-white text-center text-sm md:text-base ">Be pro-active about your home protection or make your home feel safe again.</p>
+						<div class="flex gap-2 justify-center items-center group-hover:scale-110 transition duration-75">
+							<p class="text-white font-medium text-lg">Learn More</p>
+							<img src={whiteArrow} class=" group-hover:translate-x-2 transition duration-200 " alt="white arrow pointing right" />
+						</div>
+					</div>
+				</a>
+
+				<a
+					href="/products/fire"
+					class="lg:w-[500px] lg:h-[325px] md:w-[350px] md:h-[200px] md:rounded-tr-2xl md:overflow-hidden w-3/4 h-40 bg-center bg-cover transform transition duration-200"
+					style={`background-image: url(${fire})`}
+				>
+				<div class=" w-full h-full flex flex-col items-center justify-center gap-2 py-2 px-2 md:px-8 bg-neutral-800/[.30] group">
+					<h2 class=" font-medium text-white text-3xl md:text-5xl ">Fire</h2>
+					<p class=" text-white text-center text-sm md:text-base ">Every second counts, which is why we respond in seconds.</p>
+					<div class="flex gap-2 justify-center items-center group-hover:scale-110 transition duration-75">
+						<p class="text-white font-medium text-lg">Learn More</p>
+						<img class=" group-hover:translate-x-2 transition duration-200 " src={whiteArrow} alt="white arrow pointing right" />
+					</div>
+				</div>
+				</a>
+
+				<a
+					href="/med-pendant"
+					class="lg:w-[500px] lg:h-[325px] md:w-[350px] md:h-[200px] md:rounded-bl-2xl md:overflow-hidden w-3/4 h-40 bg-center bg-cover transform transition duration-200"
+					style={`background-image: url(${medical})`}
+				>
+				<div class=" w-full h-full flex flex-col items-center justify-center gap-2 py-2 px-2 md:px-8 bg-neutral-800/[.30] group">
+					<h2 class=" font-medium text-white text-3xl md:text-5xl ">Medical</h2>
+					<p class=" text-white text-center text-sm md:text-base ">Get you or your loved ones the medical attention they need in minutes with the press of a button.</p>
+					<div class="flex gap-2 justify-center items-center group-hover:scale-110 transition duration-75">
+						<p class="text-white font-medium text-lg">Learn More</p>
+						<img class=" group-hover:translate-x-2 transition duration-200 " src={whiteArrow} alt="white arrow pointing right" />
+					</div>
+				</div>
+				</a>
+
+				<a
+					href="/cameras"
+					class="lg:w-[500px] lg:h-[325px] md:w-[350px] md:h-[200px] md:rounded-br-2xl md:overflow-hidden w-3/4 h-40 bg-center bg-cover transform transition duration-200"
+					style={`background-image: url('https://res.cloudinary.com/alder/image/upload/c_scale,w_1384/v1582226060/motion-camera.jpg')`}
+				>
+				<div class=" w-full h-full flex flex-col items-center justify-center gap-2 py-2 px-2 md:px-8 bg-neutral-800/[.30] group">
+					<h2 class=" font-medium text-white text-3xl md:text-5xl ">Cameras</h2>
+					<p class=" text-white text-center text-sm md:text-base ">Keep an eye on the inside or outside of your home with our HD wireless security cameras.</p>
+					<div class="flex gap-2 justify-center items-center group-hover:scale-110 transition duration-75">
+						<p class="text-white font-medium text-lg">Learn More</p>
+						<img class=" group-hover:translate-x-2 transition duration-200 " src={whiteArrow} alt="white arrow pointing right" />
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+
+		<ProductMenu/>
+
+		<RequestQuoteForm client:load bg_color='bg-[#297CA3]' />
+
+		<MobileAccess headingText='Mobile Access' />
+
+		<AwardCarousel client:load />
+
+		<Footer/>
+
 	</body>
 </html>

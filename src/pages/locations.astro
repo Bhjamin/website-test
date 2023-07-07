@@ -1,0 +1,145 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import whitePhone from '../assets/white-phone.svg'
+
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Alder operates all over the US, find out if Alder is in your state!" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Alder Home Security</title>
+    </head>
+    <body class="w-full bg-white flex flex-col items-center">
+        <Header path='/locations' client:load />
+
+        <div class="w-full h-[250px] bg-cover flex justify-center" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1557350586/Processed_Call_Center_463_of_484.jpg")',
+            backgroundPosition: 'center 65%'
+        }} >
+          <div class="w-full flex flex-col items-center justify-center bg-neutral-800/[.55] gap-3">
+            <h1 class="text-white font-bold text-5xl" >Locations</h1>
+            
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#297CA3] hover:bg-[#1F5D7A] hover:scale-105 transition duration-100 py-2 px-4 rounded-3xl border-2 z-10 border-white">
+                <img alt="phone icon" src={whitePhone}/>
+                <p class="text-white text-[15px]">Call Now 800-710-1289</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full max-w-7xl flex flex-wrap justify-evenly gap-10 px-4 md:px-24 py-12 bg-white">
+        
+            <a href="/states/alabama" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Alabama</a>
+
+            <a href="/states/alaska" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Alaska</a>
+
+            <a href="/states/arizona" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Arizona</a>
+
+            <a href="/states/arkansas" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Arkansas</a>
+
+            <a href="/states/california" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">California</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Colorado</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Connecticut</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Delaware</p>
+
+            <a href="/states/florida" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Florida</a>
+
+            <a href="/states/georgia" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Georgia</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Hawaii</p>
+
+            <a href="/states/idaho" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Idaho</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Illinois</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Indiana</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Iowa</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Kansas</p>
+
+            <a href="/states/kentucky" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Kentucky</a>
+
+            <a href="/states/louisiana" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Louisiana</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Maine</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Maryland</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Massachusetts</p>
+
+            <a href="/states/michigan" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Michigan</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Minnesota</p>
+
+            <a href="/states/mississippi" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Mississippi</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Missouri</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Montana</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Nebraska</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Nevada</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">New Hampshire</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">New Jersey</p>
+
+            <a href="/states/new-mexico" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">New Mexico</a>
+
+            <a href="/states/new-york" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">New York</a>
+
+            <a href="/states/north-carolina" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">North Carolina</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">North Dakota</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Ohio</p>
+
+            <a href="/states/oklahoma" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Oklahoma</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Oregon</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Pennsylvania</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Rhode Island</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">South Carolina</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">South Dakota</p>
+
+            <a href="/states/tennessee" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Tennessee</a>
+
+            <a href="/states/texas" class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg underline hover:scale-110 transition duration-200 ">Texas</a>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Utah</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Vermont</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Virgina</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">USVI</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Washington</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Washington D.C.</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">West Virginia</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Wisconsin</p>
+
+            <p class="text-[#297CA3] w-28 md:w-52 text-center font-medium text-lg ">Wyoming</p>
+
+        </div>
+
+        <Footer/>
+    </body>
+</html>

@@ -1,0 +1,426 @@
+---
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import indoorCameraBanner from "../assets/indoor-camera/indoorCamera.png";
+import Protection from "../components/indoor-camera-components/Protection";
+import RequestQuoteForm from "../components/RequestQuoteForm";
+import twoK from "../assets/2k.png";
+import AI from "../assets/AI.png";
+import audio from "../assets/audio.png";
+import nightVision from "../assets/nightVision.png";
+import alert from "../assets/alerts.png";
+import detection from "../assets/indoor-camera/detectionZone.png";
+import voice from "../assets/indoor-camera/voiceControl.png";
+import googlePlay from "../assets/googlePlayColor.svg";
+import appStore from "../assets/appleStoreColor.svg";
+import homeFromSchool from "../assets/indoor-camera/homeFromSchool.png";
+import kitchenMonitoring from "../assets/indoor-camera/kitchenMonitoring.png";
+import activity from "../assets/indoor-camera/activityWhite.png";
+import peekaboo from '../assets/indoor-camera/peekaboo.png'
+import GettingStarted from '../components/indoor-camera-components/GettingStarted'
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Monitoring your home has never been more important. Alder’s indoor security camera provides necessary safety solutions to whatever threats may come to your door."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Indoor Security Camera | Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+        <Header client:load path="/indoor-camera" />
+
+        <div
+            class="w-full h-[350px] bg-cover bg-right bg-no-repeat"
+            id="banner"
+            style={`background-image: url(${indoorCameraBanner})`}
+        >
+            <style>
+                @media (max-width: 768px) {
+                    #banner {
+                        background-position-x: -500px;
+                    }
+                }
+
+                @media (max-width: 640px) {
+                    #banner {
+                        background-position-x: -600px;
+                    }
+                }
+
+                @media (max-width: 520px) {
+                    #banner {
+                        background-position-x: -700px;
+                    }
+                }
+
+                @media (max-width: 440px) {
+                    #banner {
+                        background-position-x: -775px;
+                    }
+                }
+
+                @media (max-width: 390px) {
+                    #banner {
+                        background-position-x: -800px;
+                    }
+                }
+
+                @media (max-width: 315px) {
+                    #banner {
+                        background-position-x: -850px;
+                    }
+                }
+            </style>
+        </div>
+
+        <Protection client:load />
+
+        <div class="w-full max-w-7xl px-8 flex flex-col items-center py-12">
+            <h2
+                class="text-[#58585B] text-4xl font-medium w-full text-center lg:text-left"
+            >
+            Smart Features Overview
+            </h2>
+
+            <br />
+
+            <div class="w-full flex flex-wrap gap-0 xs:gap-6 justify-start xs:justify-center lg:justify-start flex-row pl-4 xxs:pl-8 xs:pl-0 ">
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={voice} alt="person speaking icon" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Voice control
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={twoK} alt=" 2k resolution monitor " />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2x Clearer than 1080p
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={AI} alt="AI detection system icon" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Human and Pet AI
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={audio} alt=" two-way speaker/microphone" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        2-Way Audio
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={nightVision} alt="half moon with stars" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Color Night Vision
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">    
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={detection} alt=" person being detected by security system" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Smart Detection Zones
+                    </p>
+                </div>
+                </div>
+
+                <div class="xs:w-[45%]">
+                    <div
+                    class="flex flex-row gap-4 items-center justify-start xs:justify-center lg:justify-start w-full h-20"
+                    >
+                    <img src={alert} alt="notification bell" />
+                    <p class="text-[#58585B] font-medium text-base sm:text-lg">
+                        Smart Notifications
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <RequestQuoteForm client:load bg_color="bg-[#60798F]" />
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div
+                class="w-full flex flex-col items-center lg:flex-row lg:items-stretch px-6 pt-8 lg:p-0"
+            >
+                <img src={homeFromSchool} alt="child being detected in a house while waving to her mom through security camera" class="xs:w-3/5 lg:w-1/2" />
+
+                <div
+                    class="lg:w-1/2 flex flex-col items-center lg:items-start p-0 lg:px-12 py-8 gap-4"
+                >
+                    <h2 class="text-[#58585B] text-3xl text-center font-medium">
+                        Instant Mobile Alerts
+                    </h2>
+
+                    <p class="text-[#58585B] text-[11px] font-medium leading-6">
+                        With the advanced technology of the indoor camera, you
+                        can enjoy the benefits of instant mobile alerts that
+                        keep you informed within seconds whenever suspicious
+                        motion is detected. This feature provides you with
+                        real-time notifications, ensuring that you are promptly
+                        aware of any potential security concerns or unusual
+                        activity around your home or property. The instant
+                        mobile alerts work seamlessly with the motion detection
+                        capabilities of camera. When the camera or sensor
+                        detects any movement that meets the defined criteria for
+                        suspicious activity, such as an unexpected presence or
+                        unauthorized entry, it triggers an immediate alert to be
+                        sent directly to your mobile device. This
+                        nearinstantaneous notification system is designed to
+                        keep you constantly connected to your home’s security
+                        status, regardless of your location. Whether you’re at
+                        work, running errands, or even on vacation, you can have
+                        peace of mind knowing that you’ll be notified within
+                        seconds if anything out of the ordinary occurs.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href='https://itunes.apple.com/us/app/alder-security/id1267996005?mt=8'> <img class="h-12" src={appStore} alt='apple app store logo' /> </a>
+                    <a href='https://play.google.com/store/apps/details?id=com.securenettech.alder6production'> <img class="h-12" src={googlePlay} alt='google play store logo' /> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full flex flex-col-reverse items-center lg:flex-row lg:items-stretch py-8 px-4 lg:p-0"
+            >
+                <div class="w-full lg:w-1/2 flex flex-col p-0 lg:px-12 lg:py-8">
+                    <h2 class="text-[#58585B] font-medium text-3xl mb-4">
+                        Item Details
+                    </h2>
+
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] py-1 border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Product Dimensions
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            56.89 x 56.89 x 104mm
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Video Resolution
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            2560 x 1440p HD
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Field of View
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            125° Wide Angle
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Night Vision
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Up to 32.8ft
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Smart Device Support
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Apple iOS & Android
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Lens Material
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            All-glass lens
+                        </p>
+                    </div>
+                    <div
+                        class="w-full flex justify-between items-center h-10 border-b-[1px] border-dashed border-[#58585B]"
+                    >
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            On-board Storage
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            Micro SD slot, up to 32GB
+                        </p>
+                    </div>
+                    <div class="w-full flex justify-between items-center h-10">
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base font-medium"
+                        >
+                            Smart Integration
+                        </p>
+                        <p
+                            class="text-[#58585B] text-sm xs:text-base text-right font-light"
+                        >
+                            HomeKit, Alexa, Google Assistant
+                        </p>
+                    </div>
+                </div>
+
+                <img
+                    class="xs:w-3/5 hidden lg:flex lg:w-1/2 max-h-[450px]"
+                    src={kitchenMonitoring}
+                    alt="parent watching kids from kitchen through the security app"
+                />
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center bg-[#49586A]">
+            <div
+                class="w-full max-w-6xl bg-[#49586A] py-12 px-4 md:px-20 flex flex-col items-center md:items-start"
+            >
+                <h2 class="text-white text-3xl font-medium text-center">
+                    Activity Zones <img
+                        class="h-14 w-14 inline-flex md:relative md:right-[270px]"
+                        src={activity}
+                        alt=" customizable security borders icon "
+                    />
+                </h2>
+
+                <div class="w-full flex flex-row justify-between gap-12">
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        The indoor camera offers an intelligent feature called
+                        Activity Zones that allows you to customize and define
+                        specific areas within the camera’s field of view where
+                        motion detection takes place. With Activity Zones, you
+                        have the power to personalize the surveillance to match
+                        the layout and unique needs of your home or property. By
+                        defining
+                    </p>
+
+                    <p class="text-white text-sm w-[45%] hidden sm:flex">
+                        these zones, you can focus the camera’s attention on the
+                        areas that are most important to you, such as the front
+                        door, backyard, or specific rooms. This customization
+                        ensures that you receive alerts only for the events that
+                        truly matter to you, minimizing unnecessary
+                        notifications and enhancing the overall eciency of the
+                        system.
+                    </p>
+
+                    <p
+                        class="text-white w-full text-sm flex sm:hidden leading-7"
+                    >
+                    The indoor camera oers an intelligent feature called
+                    Activity Zones that allows you to customize and define
+                    specific areas within the camera’s field of view where
+                    motion detection takes place. With Activity Zones, you
+                    have the power to personalize the surveillance to match
+                    the layout and unique needs of your home or property. By
+                    defining these zones, you can focus the camera’s attention on the
+                    areas that are most important to you, such as the front
+                    door, backyard, or specific rooms. This customization
+                    ensures that you receive alerts only for the events that
+                    truly matter to you, minimizing unnecessary
+                    notifications and enhancing the overall eciency of the
+                    system.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl flex flex-col gap-4 lg:gap-0 items-center lg:flex-row justify-center pt-8 lg:pt-0 ">
+
+            <img class=" w-[250px] md:w-1/3 lg:min-h-[465px] lg:w-1/2" alt="child playing peek-a-boo with parent through security camera" src={peekaboo} />
+
+            <div class=" w-full lg:w-1/2 px-4 sm:px-12 py-8 flex flex-col gap-4">
+
+                <h2 class="text-[#58585B] text-4xl font-medium text-center lg:text-start" >Communicate From Your Camera</h2>
+
+                <p class="text-[#58585B] text-xs leading-7">The indoor camera goes beyond traditional surveillance cameras by providing a built-in two-way
+                    audio feature, allowing you to communicate in real-time with anyone who passes by the camera. This
+                    innovative capability enhances the functionality of the camera, transforming it into a powerful tool for
+                    both monitoring and interactive engagement. With the two-way audio feature, you can speak
+                    directly to individuals within the camera’s view, providing an extra layer of convenience, security, and
+                    peace of mind. Whether you want to greet a visitor at your front door, give instructions to a delivery
+                    person, or simply have a conversation with someone on your property, the camera enables seamless
+                    communication without the need for physical presence.</p>
+
+            </div>
+
+        </div>
+
+        <GettingStarted client:load />
+
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,110 @@
+---
+
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import RequestQuoteForm from '../../components/RequestQuoteForm'
+import whitePhone from '../../assets/white-phone.svg'
+import yardSign from '../../assets/yard-sign-Opt.jpg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="The best home security in Orlando is defined by a company that works hard every day to earn your trust and respect through professional service and quality. " />
+		<title>Home Security Orlando | Alder Home Security</title>
+	</head>
+	<body class="bg-white w-full flex flex-col items-center justify-center">
+
+        <Header path='/states/florida' client:load />
+
+        <br/>
+
+        <div class="w-full h-[325px] bg-cover bg-center max-w-6xl" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1557356257/florida.jpg")'
+        }}>
+        <div class="w-full h-full flex flex-col items-center gap-8 justify-center bg-neutral-800/[.50]">
+
+            <h1 class="text-white font-medium w-4/5 md:w-1/2 text-3xl sm:text-5xl md:text-7xl text-center">Best Home Security Orlando</h1>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 hover:scale-105 transition duration-100 py-2 px-4 rounded-3xl border-2 z-10 border-white">
+                <img alt="phone icon" src={whitePhone}/>
+                <p class="text-white text-[15px]">Call Now 800-710-1289</p>
+            </a>
+            
+        </div>
+        </div>
+
+        <div class="w-full max-w-6xl py-20 px-4 bg-white flex justify-center items-center ">
+
+            <p class="text-[#58585B] leading-7 w-full md:w-4/5 lg:w-2/3 text-center">Residents in Orlando and Miami, Florida understand the importance of having good home security. Miami is constantly growing and changing because of its beautiful weather, thriving beaches, and great economy. Miami thrives on the people who liver there. Since the Orlando and Miami are made up of these smart, independent people, the cities all use a variety of home security systems. Every person in Miami wants to enjoy safety in their cities and feel as if they have a home security system that protects them and their family. One of the best security companies in Orlando and Miami is Alder Home Security. Alder Home Security puts its customers first and gives them the service that they need. This is why the best home security Orlando and Miami is Alder Home Security.</p>
+
+        </div>
+
+        <RequestQuoteForm client:load bg_color="bg-[#61798F]" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl bg-cover" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1557271904/Map_Screen_Shot.png")'
+        }} >
+        <div class="w-full h-full bg-[#297CA3]/[.50] flex flex-col items-center py-4 px-6 gap-4 justify-evenly">
+                <h2 class="flex flex-row items-center text-2xl sm:text-5xl text-white font-medium gap-2 bg-neutral-800/[.75] p-2 rounded-xl text-center ">Alder Home Security Works With Miami</h2>
+
+                <p class="text-white bg-neutral-800/[.85] text-sm md:text-base w-full md:w-2/3 p-4 leading-6 ">Miami has specific needs when it comes to finding the best home security system. This is why Miami always looks to Alder for their service. Alder works hard to ensure their customers are satisfied, happy, and taken care of. In Miami, Alder focuses on what the city needs rather than general needs of the general customer. Their home security systems that are tailored to the customers home and to the customer's needs. Alder’s goal is to make sure the customer knows that they have everything that they need to feel secure. They set up the alarm in the home, the cameras, and everything else they need in order to make that happen for the customer. Because of that, Alder is the best home security Orlando.</p>
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-4xl bg-cover bg-center " style={{
+            backgroundImage: `url(${yardSign})`
+        }} >
+        <div class="w-full h-full bg-neutral-800/[.75] md:bg-neutral-800/[.45] flex flex-col justify-center gap-4 py-8 px-4 md:px-12">
+
+            <h3 class="text-white text-2xl">Why Alder is the</h3>
+
+            <h3 class="text-white text-4xl font-medium">Best Home Security Orlando</h3>
+
+            <p class="text-white text-xs sm:text-sm font-medium md:w-1/2 leading-6">There are a few reasons why Alder is the best home security Orlando. They offer doorbell cameras that allow you to have two-way communication through the doorbell. The great thing about this aspect of the security system is that it allows you to have access to your front step matter where you are in the world. You can access the camera through the ease of your phone. This is one of the aspects of the home security system that Miami loves. Alder also makes an effort to keep their services cheap while other security companies can overprice their products. Alder ensures to keep their services within the budget so every person in Miami can afford the service.
+                The alarm that Alder helps to set up in the home are great home security systems with high-quality cameras and video. The customers get to have complete pick over each and every alarm that gets set up in the home to make sure that they are comfortable with the quality and placement of each alarm and camera.</p>
+
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div class="w-full h-[250px] bg-cover" style={{
+                backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/v1557333574/simple.jpg")',
+                backgroundPosition: "center 85%"
+            }} />
+
+            <div class="w-full flex flex-col items-center justify-between gap-4 md:gap-0 md:flex-row px-4 py-12 ">
+
+                <div class=" w-full md:w-[25%] flex flex-col gap-8 md:gap-4">
+                    <h3 class="text-[#58585B] font-medium text-2xl text-center md:text-left ">Local Home Security</h3>
+
+                    <p class="text-[#58585B] text-xl text-start" >In Miami and Orlando</p>
+                </div>
+
+                <p class="text-[#58585B] text-sm leading-6 w-full md:w-[65%] " >
+                    Alder likes to keep things local for their customer. Living in Miami and Orlando, customers have local representatives in their area. They will be protected at all times of the day or night. The alarm systems are also some of the best on the market. Customers are able to monitor their cameras and sensors from a remote location. The customer will have full access to the alarm system, locks, and cameras. The reason why Alder does this is that they want the customer to have control of their home.
+                    The systems are easy to control, safe, and give you the comfort of being in control at all times. You no longer have to worry or run home when you think you’ve forgotten to lock the door because you have access to everything on your phone. Alder works hard to put the customer in control of a local service. With Alder, the customers are in charge.
+                </p>
+
+            </div>
+
+        </div>
+        
+    
+        <Footer />
+
+    </body>
+</html>

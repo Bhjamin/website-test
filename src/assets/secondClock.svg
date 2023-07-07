@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="101px" viewBox="0 0 102 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Life-Safety" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Life-safety" transform="translate(-300.000000, -2986.000000)">
+            <g id="Group-13" transform="translate(0.000000, 2903.000000)">
+                <g id="Group-12" transform="translate(183.000000, 71.000000)">
+                    <g id="Group-9">
+                        <g id="Group-5" transform="translate(117.000000, 14.000000)">
+                            <circle id="Oval" stroke="#FFFFFF" stroke-width="3" transform="translate(44.000000, 55.000000) scale(-1, 1) translate(-44.000000, -55.000000) " cx="44" cy="55" r="42.5"></circle>
+                            <path d="M96.3359175,0 C71.6321346,0 50.875923,16.9015619 45,39.7719683" id="Oval" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(70.667959, 19.885984) scale(-1, 1) translate(-70.667959, -19.885984) "></path>
+                            <circle id="Oval" stroke="#FFFFFF" stroke-width="3" transform="translate(44.000000, 55.000000) scale(-1, 1) translate(-44.000000, -55.000000) " cx="44" cy="55" r="2.5"></circle>
+                            <rect id="Rectangle-16" fill="#FFFFFF" x="42" y="33" width="4" height="23" rx="2"></rect>
+                            <rect id="Rectangle-16" fill="#FFFFFF" transform="translate(54.438708, 44.768398) rotate(45.000000) translate(-54.438708, -44.768398) " x="52.4387085" y="28.7380682" width="4" height="32.0606602" rx="2"></rect>
+                            <g id="Group-4" transform="translate(94.333900, 34.633755) rotate(24.000000) translate(-94.333900, -34.633755) translate(87.333900, 28.133755)" fill="#FFFFFF">
+                                <rect id="Rectangle-17" x="0.593263357" y="9.08645454" width="12" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-17" transform="translate(11.503519, 6.023712) rotate(-270.000000) translate(-11.503519, -6.023712) " x="5.50351947" y="4.52371163" width="12" height="3" rx="1.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

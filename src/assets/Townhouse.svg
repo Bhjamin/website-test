@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="524px" height="406px" viewBox="0 0 524 406" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Townhouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="516.464639" height="404.934457"></rect>
+        <rect id="path-3" x="0" y="0" width="66.3445693" height="52.7019231"></rect>
+        <path d="M35.1235955,33.8193282 L35.1235955,80.0288462 L-1.8189894e-12,80.0288462 L-1.8189894e-12,33.8193282 L4.54747351e-13,9.12297953 C3.88454247,3.60500067 10.3023056,0 17.5617978,0 C24.8212899,0 31.239053,3.60500067 35.1235955,9.12297953 L35.1235955,33.8193282 Z" id="path-5"></path>
+    </defs>
+    <g id="Home-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Townhouse" transform="translate(2.000000, 0.000000)">
+            <g id="bg">
+                <g id="circle" transform="translate(0.550370, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <ellipse id="Oval-9" fill="#E6F7FF" mask="url(#mask-2)" cx="256.625034" cy="247.278045" rx="246.813168" ry="247.278045"></ellipse>
+                </g>
+                <path d="M0,403.048723 L520.021248,403.048723" id="Line-3" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="tree" transform="translate(415.629213, 265.461538)">
+                    <g id="Group-33">
+                        <ellipse id="Oval" stroke="#516675" stroke-width="3.92729983" fill="#297CA3" stroke-linecap="round" stroke-linejoin="round" cx="50.0773912" cy="50.1717129" rx="50.0773912" ry="50.1717129"></ellipse>
+                        <ellipse id="Oval-Copy" fill="#E6F7FF" cx="44.1859334" cy="44.2691584" rx="38.2944757" ry="38.366604"></ellipse>
+                    </g>
+                    <path d="M50.0773912,48.2041947 L50.0773912,134.774993" id="Line-4" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M30.4391986,63.9443399 L50.0773912,83.6195214" id="Line-5" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M61.8603068,56.0742673 L50.0773912,67.8793762" id="Line-6" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="bench" transform="translate(376.602996, 368.913462)" fill="#516675">
+                    <rect id="Rectangle-59" x="0" y="0" width="66.3445693" height="3.90384615" rx="1.95192308"></rect>
+                    <rect id="Rectangle-59-Copy" x="0" y="7.80769231" width="66.3445693" height="3.90384615" rx="1.95192308"></rect>
+                    <rect id="Rectangle-59-Copy-2" x="0" y="15.6153846" width="66.3445693" height="3.90384615" rx="1.95192308"></rect>
+                    <rect id="Rectangle-59-Copy-2" transform="translate(9.756554, 17.567308) rotate(-270.000000) translate(-9.756554, -17.567308) " x="-5.85393258" y="15.6153846" width="31.2209738" height="3.90384615" rx="1.95192308"></rect>
+                    <rect id="Rectangle-59-Copy-3" transform="translate(56.588015, 17.567308) rotate(-270.000000) translate(-56.588015, -17.567308) " x="40.9775281" y="15.6153846" width="31.2209738" height="3.90384615" rx="1.95192308"></rect>
+                </g>
+            </g>
+            <rect id="walls" stroke="#516675" stroke-width="3.9000001" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="105.370787" y="46.8461538" width="232.205993" height="355.25"></rect>
+            <rect id="Rectangle-68" fill="#297CA3" x="107.322097" y="255.701923" width="228.303371" height="3.90384615"></rect>
+            <g id="roof-lines" transform="translate(134.640449, 48.798077)" fill="#297CA3">
+                <path d="M163.910112,0 L167.812734,0 L167.812734,70.2711538 C167.812734,71.3481091 166.939689,72.2211538 165.862734,72.2211538 L165.860112,72.2211538 C164.783157,72.2211538 163.910112,71.3481091 163.910112,70.2711538 L163.910112,0 Z" id="Rectangle-50"></path>
+                <path d="M144.397004,0 L148.299625,0 L148.299625,70.2711538 C148.299625,71.3481091 147.426581,72.2211538 146.349625,72.2211538 L146.347004,72.2211538 C145.270049,72.2211538 144.397004,71.3481091 144.397004,70.2711538 L144.397004,0 Z" id="Rectangle-50-Copy"></path>
+                <path d="M0,0 L3.90262172,0 L3.90262172,70.2711538 C3.90262172,71.3481091 3.02957696,72.2211538 1.95262168,72.2211538 L1.95000005,72.2211538 C0.873044759,72.2211538 3.5393359e-16,71.3481091 2.22044605e-16,70.2711538 L0,0 Z" id="Rectangle-50-Copy-6"></path>
+                <path d="M19.5131086,0 L23.4157303,0 L23.4157303,70.2711538 C23.4157303,71.3481091 22.5426856,72.2211538 21.4657303,72.2211538 L21.4631087,72.2211538 C20.3861534,72.2211538 19.5131086,71.3481091 19.5131086,70.2711538 L19.5131086,0 Z" id="Rectangle-50-Copy-6"></path>
+                <path d="M39.0262172,0 L42.928839,0 L42.928839,70.2711538 C42.928839,71.3481091 42.0557942,72.2211538 40.9788389,72.2211538 L40.9762173,72.2211538 C39.899262,72.2211538 39.0262172,71.3481091 39.0262172,70.2711538 L39.0262172,0 Z" id="Rectangle-50-Copy-6"></path>
+                <path d="M58.5393258,0 L62.4419476,0 L62.4419476,70.2711538 C62.4419476,71.3481091 61.5689028,72.2211538 60.4919475,72.2211538 L60.4893259,72.2211538 C59.4123706,72.2211538 58.5393258,71.3481091 58.5393258,70.2711538 L58.5393258,0 Z" id="Rectangle-50-Copy-6"></path>
+                <path d="M78.0524345,0 L81.9550562,0 L81.9550562,70.2711538 C81.9550562,71.3481091 81.0820114,72.2211538 80.0050561,72.2211538 L80.0024345,72.2211538 C78.9254792,72.2211538 78.0524345,71.3481091 78.0524345,70.2711538 L78.0524345,0 Z" id="Rectangle-50-Copy-6"></path>
+                <path d="M97.5655431,0 L101.468165,0 L101.468165,70.2711538 C101.468165,71.3481091 100.59512,72.2211538 99.5181647,72.2211538 L99.5155431,72.2211538 C98.4385878,72.2211538 97.5655431,71.3481091 97.5655431,70.2711538 L97.5655431,0 Z" id="Rectangle-50-Copy-6"></path>
+            </g>
+            <polygon id="Rectangle-66" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="195.131086 121.019231 257.67292 33.1826923 320.014981 121.019231 320.014981 402.096154 195.131086 402.096154"></polygon>
+            <g id="shadows" transform="translate(107.322097, 87.836538)" fill="#297CA3">
+                <polygon id="Rectangle-63" transform="translate(79.028090, 23.423077) scale(-1, 1) translate(-79.028090, -23.423077) " points="72.1985019 33.8895632 85.8576779 0 85.8576779 46.8461538 72.1985019 46.8461538"></polygon>
+                <rect id="Rectangle-68" x="89.7602996" y="70.2692308" width="11.7078652" height="3.90384615"></rect>
+                <rect id="Rectangle-68" x="0" y="70.2692308" width="85.8576779" height="3.90384615"></rect>
+                <rect id="Rectangle-68" x="214.644195" y="58.5576923" width="7.80524345" height="253.75"></rect>
+                <rect id="Rectangle-68" x="199.033708" y="70.2692308" width="11.7078652" height="3.90384615"></rect>
+                <rect id="Rectangle-68" x="214.644195" y="70.2692308" width="13.659176" height="3.90384615"></rect>
+                <polygon id="Rectangle-63" transform="translate(94.638577, 288.884615) scale(-1, 1) translate(-94.638577, -288.884615) " points="87.8089888 299.351102 101.468165 265.461538 101.468165 312.307692 87.8089888 312.307692"></polygon>
+            </g>
+            <g transform="translate(99.516854, 33.182692)">
+                <g id="roof">
+                    <path d="M148.299625,54.6538462 L165.861423,54.6538462 L165.861423,92.7191011 C165.861423,97.5686577 161.930081,101.5 157.080524,101.5 L157.080524,101.5 C152.230968,101.5 148.299625,97.5686577 148.299625,92.7191011 L148.299625,54.6538462 Z" id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" transform="translate(157.080524, 78.076923) scale(-1, -1) translate(-157.080524, -78.076923) "></path>
+                    <g id="Group-52" transform="translate(142.445693, 54.653846)">
+                        <path d="M13.659176,9.75961538 L31.2209738,9.75961538 L31.2209738,47.8248704 C31.2209738,52.6744269 27.2896314,56.6057692 22.4400749,56.6057692 L22.4400749,56.6057692 C17.5905184,56.6057692 13.659176,52.6744269 13.659176,47.8248704 L13.659176,9.75961538 Z" id="Rectangle-51" fill="#297CA3" transform="translate(22.440075, 33.182692) scale(-1, -1) translate(-22.440075, -33.182692) "></path>
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.634831, 52.701923) scale(-1, 1) translate(-14.634831, -52.701923) " x="0" y="46.8461538" width="29.2696629" height="11.7115385"></rect>
+                        <path d="M5.85393258,0 L23.4157303,0 L23.4157303,38.065255 C23.4157303,42.9148115 19.484388,46.8461538 14.6348315,46.8461538 L14.6348315,46.8461538 C9.78527492,46.8461538 5.85393258,42.9148115 5.85393258,38.065255 L5.85393258,0 Z" id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.634831, 23.423077) scale(-1, -1) translate(-14.634831, -23.423077) "></path>
+                    </g>
+                    <g id="Group-51" transform="translate(0.000000, 101.500000)" fill="#FFFFFF" stroke="#516675" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.92729983">
+                        <rect id="Rectangle-51" x="0" y="0" width="89.7602996" height="11.7115385"></rect>
+                        <rect id="Rectangle-51" transform="translate(102.443820, 5.855769) scale(-1, 1) translate(-102.443820, -5.855769) " x="89.7602996" y="0" width="25.3670412" height="11.7115385"></rect>
+                        <rect id="Rectangle-51" transform="translate(58.539326, 16.591346) scale(1, -1) translate(-58.539326, -16.591346) " x="5.85393258" y="11.7115385" width="105.370787" height="9.75961538"></rect>
+                    </g>
+                    <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" transform="translate(157.080524, 107.355769) scale(-1, 1) translate(-157.080524, -107.355769) " x="142.445693" y="101.5" width="29.2696629" height="11.7115385"></rect>
+                    <g id="Group-53" transform="translate(199.033708, 101.500000)">
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.683521, 5.855769) scale(-1, 1) translate(-12.683521, -5.855769) " x="0" y="0" width="25.3670412" height="11.7115385"></rect>
+                        <g id="Group-62-Copy" transform="translate(25.367041, 0.000000)">
+                            <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="11.7115385"></rect>
+                            <rect id="Rectangle-51" fill="#297CA3" x="0" y="0" width="11.7078652" height="11.7115385"></rect>
+                            <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="11.7115385"></rect>
+                        </g>
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(22.440075, 16.591346) scale(1, -1) translate(-22.440075, -16.591346) " x="5.85393258" y="11.7115385" width="33.1722846" height="9.75961538"></rect>
+                    </g>
+                    <g id="Group-46" transform="translate(5.853933, 0.000000)" fill="#FFFFFF" stroke="#516675" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.92729983">
+                        <rect id="Rectangle-49" x="0" y="0" width="17.5617978" height="87.8365385"></rect>
+                        <rect id="Rectangle-49" transform="translate(8.780899, 94.668269) scale(1, -1) translate(-8.780899, -94.668269) " x="0" y="87.8365385" width="17.5617978" height="13.6634615"></rect>
+                        <rect id="Rectangle-49" x="214.644195" y="0" width="17.5617978" height="87.8365385"></rect>
+                        <rect id="Rectangle-49" transform="translate(223.425094, 94.668269) scale(1, -1) translate(-223.425094, -94.668269) " x="214.644195" y="87.8365385" width="17.5617978" height="13.6634615"></rect>
+                    </g>
+                </g>
+                <g id="windows" transform="translate(46.831461, 136.634615)">
+                    <g id="Group-40">
+                        <rect id="Rectangle-52" fill="#297CA3" x="7.80524345" y="11.7115385" width="15.6104869" height="52.7019231"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="42.9423077" width="23.4157303" height="21.4711538"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="23.4157303" height="42.9423077"></rect>
+                    </g>
+                    <g id="Group-40-Copy-6" transform="translate(81.955056, 0.000000)">
+                        <rect id="Rectangle-52" fill="#297CA3" x="7.80524345" y="11.7115385" width="15.6104869" height="52.7019231"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="42.9423077" width="23.4157303" height="21.4711538"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="23.4157303" height="42.9423077"></rect>
+                    </g>
+                    <g id="Group-40-Copy-6" transform="translate(117.078652, 0.000000)">
+                        <rect id="Rectangle-52" fill="#297CA3" x="7.80524345" y="11.7115385" width="15.6104869" height="52.7019231"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="42.9423077" width="23.4157303" height="21.4711538"></rect>
+                        <rect id="Rectangle-52" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="23.4157303" height="42.9423077"></rect>
+                    </g>
+                </g>
+                <g id="Group-54" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.000000, 201.048077)">
+                    <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" x="0" y="0" width="89.7602996" height="11.7115385"></rect>
+                    <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" transform="translate(157.080524, 5.855769) scale(-1, 1) translate(-157.080524, -5.855769) " x="89.7602996" y="0" width="134.640449" height="11.7115385"></rect>
+                    <g id="Group-62" transform="translate(224.400749, 0.000000)">
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="11.7115385"></rect>
+                        <rect id="Rectangle-51" fill="#297CA3" x="0" y="0" width="11.7078652" height="11.7115385"></rect>
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="11.7115385"></rect>
+                    </g>
+                    <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" transform="translate(121.956929, 15.615385) scale(1, -1) translate(-121.956929, -15.615385) " x="5.85393258" y="11.7115385" width="232.205993" height="7.80769231"></rect>
+                    <rect id="Rectangle-68" fill="#297CA3" x="222.449438" y="13.6634615" width="7.80524345" height="3.90384615"></rect>
+                </g>
+                <g id="Group-56" transform="translate(21.464419, 316.211538)" stroke="#516675" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9000001">
+                    <rect id="Rectangle-64" transform="translate(6.829588, 26.350962) scale(-1, 1) translate(-6.829588, -26.350962) " x="0" y="0" width="13.659176" height="52.7019231"></rect>
+                    <g id="Group-55" transform="translate(13.659176, 0.000000)">
+                        <rect id="Rectangle-64" x="0" y="0" width="46.8314607" height="9.75961538"></rect>
+                        <rect id="Rectangle-64" x="0" y="9.75961538" width="46.8314607" height="9.75961538"></rect>
+                        <rect id="Rectangle-64-Copy" x="0" y="19.5192308" width="46.8314607" height="9.75961538"></rect>
+                        <rect id="Rectangle-64-Copy-2" x="0" y="29.2788462" width="46.8314607" height="9.75961538"></rect>
+                        <rect id="Rectangle-64-Copy-3" x="0" y="39.0384615" width="46.8314607" height="7.80769231"></rect>
+                    </g>
+                    <rect id="Rectangle-64" transform="translate(67.320225, 26.350962) scale(-1, 1) translate(-67.320225, -26.350962) " x="60.4906367" y="0" width="13.659176" height="52.7019231"></rect>
+                </g>
+                <g id="Group-58" transform="translate(120.981273, 333.778846)">
+                    <rect id="Rectangle-65-Copy" fill="#297CA3" x="5.85393258" y="9.75961538" width="68.2958801" height="9.75961538"></rect>
+                    <rect id="Rectangle-65-Copy" stroke="#516675" stroke-width="3.9000001" stroke-linecap="round" stroke-linejoin="round" x="52.6853933" y="0" width="21.4644195" height="19.5192308"></rect>
+                    <rect id="Rectangle-65" stroke="#516675" stroke-width="3.9000001" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="21.4644195" height="19.5192308"></rect>
+                    <rect id="Rectangle-65-Copy" stroke="#516675" stroke-width="3.9000001" stroke-linecap="round" stroke-linejoin="round" transform="translate(37.074906, 9.759615) scale(-1, 1) translate(-37.074906, -9.759615) " x="21.4644195" y="0" width="31.2209738" height="19.5192308"></rect>
+                </g>
+                <g id="Group-61" transform="translate(120.981273, 240.086538)">
+                    <g id="Rectangle-65-Copy" transform="translate(5.853933, 9.759615)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#297CA3" xlink:href="#path-3"></use>
+                        <rect fill="#ADDAED" mask="url(#mask-4)" transform="translate(38.050562, 37.086538) rotate(-300.000000) translate(-38.050562, -37.086538) " x="31.2209738" y="-11.7115385" width="13.659176" height="97.5961538"></rect>
+                    </g>
+                    <g id="Group-58" transform="translate(0.000000, 44.894231)" stroke="#516675" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9000001">
+                        <rect id="Rectangle-65" x="0" y="0" width="21.4644195" height="19.5192308"></rect>
+                        <rect id="Rectangle-65-Copy" x="52.6853933" y="0" width="21.4644195" height="19.5192308"></rect>
+                        <rect id="Rectangle-65-Copy" transform="translate(37.074906, 9.759615) scale(-1, 1) translate(-37.074906, -9.759615) " x="21.4644195" y="0" width="31.2209738" height="19.5192308"></rect>
+                    </g>
+                    <g id="Group-58" transform="translate(37.074906, 22.447115) scale(1, -1) translate(-37.074906, -22.447115) " stroke="#516675" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9000001">
+                        <rect id="Rectangle-65" x="0" y="0" width="21.4644195" height="44.8942308"></rect>
+                        <rect id="Rectangle-65-Copy" x="52.6853933" y="0" width="21.4644195" height="44.8942308"></rect>
+                        <rect id="Rectangle-65-Copy" transform="translate(37.074906, 22.447115) scale(-1, 1) translate(-37.074906, -22.447115) " x="21.4644195" y="0" width="31.2209738" height="44.8942308"></rect>
+                    </g>
+                </g>
+                <g id="Group-57" transform="translate(0.000000, 316.211538)">
+                    <rect id="Rectangle-64" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="21.4644195" height="9.75961538"></rect>
+                    <rect id="Rectangle-64" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="95.6142322" y="0" width="128.786517" height="9.75961538"></rect>
+                    <rect id="Rectangle-64" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" transform="translate(235.132959, 4.879808) scale(-1, 1) translate(-235.132959, -4.879808) " x="226.35206" y="0" width="17.5617978" height="9.75961538"></rect>
+                    <g id="Group-62" transform="translate(224.400749, 0.000000)">
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="9.75961538"></rect>
+                        <rect id="Rectangle-51" fill="#297CA3" x="0" y="0" width="11.7078652" height="9.75961538"></rect>
+                        <rect id="Rectangle-51" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="19.5131086" height="9.75961538"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-59" transform="translate(136.591760, 87.836538)">
+                <rect id="Rectangle-63" stroke="#516675" stroke-width="3.92729983" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="42.928839" height="46.8461538"></rect>
+                <rect id="Rectangle-63" fill="#297CA3" x="15.6104869" y="19.5192308" width="17.5617978" height="27.3269231"></rect>
+                <rect id="Rectangle-63" stroke="#516675" stroke-width="3.92729983" stroke-linecap="round" stroke-linejoin="round" x="7.80524345" y="9.75961538" width="25.3670412" height="37.0865385"></rect>
+            </g>
+            <g id="Group-60" transform="translate(140.494382, 269.365385)">
+                <g id="Combined-Shape">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <path d="M42.928839,39.6750974 L42.928839,85.8846154 L7.80524345,85.8846154 L7.80524345,39.6750974 L7.80524345,14.9787488 C11.6897859,9.4607699 18.1075491,5.85576923 25.3670412,5.85576923 C32.6265333,5.85576923 39.0442965,9.4607699 42.928839,14.9787488 L42.928839,39.6750974 Z" fill="#297CA3" mask="url(#mask-6)"></path>
+                </g>
+                <path d="M35.1235955,33.8193282 L35.1235955,80.0288462 L-2.27373675e-12,80.0288462 L-2.27373675e-12,33.8193282 L-4.03896783e-28,9.12297953 C3.88454247,3.60500067 10.3023056,0 17.5617978,0 C24.8212899,0 31.239053,3.60500067 35.1235955,9.12297953 L35.1235955,33.8193282 Z" id="Combined-Shape" stroke="#516675" stroke-width="3.9000001" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

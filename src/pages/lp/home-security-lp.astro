@@ -1,0 +1,356 @@
+---
+import logo from "../../assets/lp/alder-logo-lander-v4.svg";
+import bluePhone from "../../assets/lp/phone-icon-lander-v4.svg";
+import HomeSecurityLPBanner from "../../components/landing-page-components/HomeSecurityLPBanner";
+import simplyRefined from "../../assets/166x88.png";
+import trulyEmpowering from "../../assets/98x114.png";
+import allInclusive from "../../assets/140x114.png";
+import secureHome1 from "../../assets/610x583.png";
+import secureHome2 from "../../assets/423x423.png";
+import secureHome3 from "../../assets/367x367.png";
+import RequestQuoteFormLP from "../../components/landing-page-components/RequestQuoteFormLP";
+import whiteArrow from "../../assets/whiteArrow.svg";
+import ProductMenu from "../../components/ProductMenu";
+import Family from "../../assets/family-front-door-Opt.jpg";
+import iphone from '../../assets/iphoneX.png'
+import trial from "../../assets/lp/trial.svg";
+import stevie from '../../assets/stevie.svg'
+import UBLogo from '../../assets/UBLogo.svg'
+import utah100 from '../../assets/utah100.svg'
+import bestCompanyLogo from '../../assets/bestCompanyLogo.svg'
+import alderLogo from '../../assets/alder-logo.svg'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../AlderFavicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Protect your home and loved ones with Alder’s easy to use home security systems. Other alarm systems just don’t compare to everything you get with Alder."
+    />
+    <title>Home Security Systems | Alder Home Security</title>
+  </head>
+  <body class="bg-slate-400 flex flex-col items-center">
+    <header
+      class="w-full sticky z-50 top-0 h-20 bg-white shadow-lg flex items-center justify-between px-4 sm:px-12"
+    >
+      <a aria-label="back to alder.com homepage" href="/">
+        <img class="h-8 xs:h-12" src={logo} alt="alder logo" />
+      </a>
+
+      <a
+        href="tel:877.617.5650"
+        class="px-2 py-1 xs:px-6 xs:py-2 border-2 rounded-full flex justify-center items-center gap-2 border-[#255E79] bg-white hover:bg-[#f1f1f2] hover:scale-105 hover:-translate-y-[2px] hover:shadow-xl transition duration-100"
+      >
+        <img src={bluePhone} class=" w-[15%] xs:w-[20%]" alt="phone icon" />
+        <p class="text-sm xs:text-base font-medium text-[#255E79]">
+          877.617.5650
+        </p>
+      </a>
+    </header>
+
+    <HomeSecurityLPBanner client:load />
+
+    <div
+      class="w-full py-8 bg-white flex flex-col items-center lg:flex-row lg:justify-evenly gap-10"
+    >
+      <div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+        <img
+          src={simplyRefined}
+          class="w-[75px] h-[50px]"
+          alt="Home Security Panel Icon"
+        />
+        <h2 class="text-[#58585B] text-xl font-medium">Simply Refined</h2>
+        <p class="text-center text-[#58585b] text-[18px]">
+          Tackling design and manufacturing in-house keeps quality high, costs
+          low and performance reliable. You get the protection you want without
+          the hassle.
+        </p>
+      </div>
+
+      <div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+        <img
+          src={allInclusive}
+          class="w-[75px] h-[50px]"
+          alt="Person with affirming checkmark"
+        />
+        <h2 class="text-[#58585B] text-xl font-medium">All-Inclusive</h2>
+        <p class="text-center text-[#58585b] text-[18px]">
+          Secure your home and keep your security deposit. Our plug-and-play
+          design makes installation a 30-minute cakewalk with no remodeling,
+          rewiring or poking holes.
+        </p>
+      </div>
+
+      <div class="w-4/5 lg:w-1/4 flex flex-col items-center gap-2">
+        <img
+          src={trulyEmpowering}
+          class="w-[75px] h-[50px]"
+          alt="Person with headset"
+        />
+        <h2 class="text-[#58585B] text-xl font-medium">Truly Empowering</h2>
+        <p class="text-center text-[#58585b] text-[18px]">
+          Since real emergencies need more than just a siren, we have monitoring
+          teams to dial 911 for you. So you can stay focused on your family and
+          property.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="w-full p-8 bg-[#4BB1E4] flex flex-col lg:flex-row items-center gap-10"
+    >
+      <h2 class="text-[#1C1C1C] font-medium text-2xl lg:text-4xl text-center">
+        Secure Your Home in Three Simple Steps!
+      </h2>
+      <div
+        class="w-full flex flex-col lg:flex-row items-center lg:justify-evenly"
+      >
+        <div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+          <img
+            src={secureHome1}
+            class="w-[182px] h-[182px]"
+            alt="Delivery arriving at a house"
+          />
+          <h2 class="text-[#1C1C1C] text-2xl font-medium">1</h2>
+          <p class="text-center font-medium text-[#1C1C1C] text-[18px]">
+            Follow our easy step-by-step guide to design your personalized
+            security kit.
+          </p>
+        </div>
+
+        <div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+          <img
+            src={secureHome2}
+            class="w-[182px] h-[182px]"
+            alt="Home security panel"
+          />
+          <h2 class="text-[#1C1C1C] text-2xl font-medium">2</h2>
+          <p class="text-center font-medium text-[#1C1C1C] text-[18px]">
+            Your package arrives in two days pre-programmed for easy setup in 30
+            minutes.
+          </p>
+        </div>
+
+        <div class="w-4/5 lg:w-1/4 flex flex-col items-center">
+          <img
+            src={secureHome3}
+            class="w-[182px] h-[182px]"
+            alt="Person with headset"
+          />
+          <h2 class="text-[#1C1C1C] text-2xl font-medium">3</h2>
+          <p class="text-center font-medium text-[#1C1C1C] text-[18px]">
+            Live in peace for the rest of your days knowing your home is
+            protected by Alder.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <RequestQuoteFormLP bg_color="bg-[#F3F3F4]" client:load />
+
+    <div class="w-full bg-white flex flex-col items-center gap-8 p-8">
+      <div
+        class="w-full max-w-5xl flex flex-col items-center md:flex-row gap-8 md:gap-0 justify-evenly"
+      >
+        <div
+          class="border-4 rounded-bl-[45px] min-w-[200px] min-h-[175px] w-[75%] md:w-[35%] h-[175px] flex flex-col items-center justify-between shadow-md border-[#0F6085]"
+        >
+          <div class="w-full h-[80%] flex flex-col justify-evenly px-4">
+            <h2 class="text-black font-medium text-2xl md:text-3xl">
+              Security
+            </h2>
+
+            <p class="text-black text-xs md:text-sm">
+              Be pro-active about your home protection or make your home fell
+              safe again.
+            </p>
+          </div>
+
+          <div class="w-full h-[20%] flex justify-end">
+            <a
+              href="/home-security"
+              class="bg-[#0F6085] group h-full pl-4 md:pl-0 items-center justify-center gap-4 flex w-full rounded-bl-full md:rounded-bl-none md:w-[175px]"
+            >
+              <p
+                class="text-white text-center group-hover:scale-105 transition duration-100"
+              >
+                Home Security
+              </p>
+              <img
+                src={whiteArrow}
+                alt="arrow"
+                class="group-hover:translate-x-2 transition duration-150"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="border-4 rounded-bl-[45px] min-w-[200px] min-h-[175px] w-[75%] md:w-[35%] h-[175px] flex flex-col items-center justify-between shadow-md border-[#0F6085]"
+        >
+          <div class="w-full h-[80%] flex flex-col justify-evenly px-4">
+            <h2 class="text-black font-medium text-2xl md:text-3xl">Fire</h2>
+
+            <p class="text-black text-xs md:text-sm">
+              Every second counts, which is why we respond in seconds.
+            </p>
+          </div>
+
+          <div class="w-full h-[20%] flex justify-end">
+            <a
+              aria-label="go to alders fire alarm page"
+              href="/products/fire"
+              class="bg-[#0F6085] group h-full pl-4 md:pl-0 items-center justify-center gap-4 flex w-full rounded-bl-full md:rounded-bl-none md:w-[175px]"
+            >
+              <p
+                class="text-white text-center group-hover:scale-105 transition duration-100"
+              >
+                Fire Alarm
+              </p>
+              <img
+                src={whiteArrow}
+                alt="arrow"
+                class="group-hover:translate-x-2 transition duration-150"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full max-w-5xl flex flex-col items-center md:flex-row gap-8 md:gap-0 justify-evenly"
+      >
+        <div
+          class="border-4 rounded-bl-[45px] min-w-[200px] min-h-[175px] w-[75%] md:w-[35%] h-[175px] flex flex-col items-center justify-between shadow-md border-[#0F6085]"
+        >
+          <div class="w-full h-[80%] flex flex-col justify-evenly px-4">
+            <h2 class="text-black font-medium text-2xl md:text-3xl">Medical</h2>
+
+            <p class="text-black text-xs md:text-sm">
+              Get you or your loved ones the medical attention they need in
+              minutes with the press of a button.
+            </p>
+          </div>
+
+          <div class="w-full h-[20%] flex justify-end">
+            <a
+              aria-label="go to alders medical pendant page"
+              href="/med-pendant"
+              class="bg-[#0F6085] group h-full pl-4 md:pl-0 items-center justify-center gap-4 flex w-full rounded-bl-full md:rounded-bl-none md:w-[175px]"
+            >
+              <p
+                class="text-white text-center group-hover:scale-105 transition duration-100"
+              >
+                Med Pendant
+              </p>
+              <img
+                src={whiteArrow}
+                alt="arrow"
+                class="group-hover:translate-x-2 transition duration-150"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="border-4 rounded-bl-[45px] min-w-[200px] min-h-[175px] w-[75%] md:w-[35%] h-[175px] flex flex-col items-center justify-between shadow-md border-[#0F6085]"
+        >
+          <div class="w-full h-[80%] flex flex-col justify-evenly px-4">
+            <h2 class="text-black font-medium text-2xl md:text-3xl">Cameras</h2>
+
+            <p class="text-black text-xs md:text-sm">
+              Keep an eye on the inside or outside of your home with our HD
+              wireless security cameras.
+            </p>
+          </div>
+
+          <div class="w-full h-[20%] flex justify-end">
+            <a
+              aria-label="go to alders camera page"
+              href="/cameras"
+              class="bg-[#0F6085] group h-full pl-4 md:pl-0 items-center justify-center gap-4 flex w-full rounded-bl-full md:rounded-bl-none md:w-[175px]"
+            >
+              <p
+                class="text-white text-center group-hover:scale-105 transition duration-100"
+              >
+                Security Cameras
+              </p>
+              <img
+                src={whiteArrow}
+                alt="arrow"
+                class="group-hover:translate-x-2 transition duration-150"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ProductMenu bg_color="bg-[#F1EFEF]" client:load />
+
+    <div
+      class="w-full bg-cover bg-right"
+      style={{
+        backgroundImage: `url(${Family})`,
+      }}
+    >
+      <div class="w-full h-full bg-[#61beec]/[.90] flex flex-col-reverse gap-4 sm:gap-0 items-center sm:flex-row justify-between py-12 px-6 xs:p-12 sm:pr-20">
+
+        <div class="flex flex-col items-center sm:items-start justify-center w-full sm:w-[45%] lg:w-[35%] xl:w-[25%] gap-6">
+
+            <h2 class="text-black text-3xl md:text-4xl xl:text-5xl font-medium text-center sm:text-left" >Mobile Access</h2>
+
+            <p class="text-sm xl:text-base text-center sm:text-left">
+                With the Alder app you can control your home security system from your phone. It works with Android and iOS. All you need is an internet connection.
+            </p>
+
+            <a href="/products/app" class="border-2 border-white text-white bg-[#0F6085] max-w-[250px] w-[90%] sm:w-[75%] py-1 text-center rounded-full shadow-md hover:shadow-2xl hover:scale-105 hover:-translate-y-[2px] hover:bg-[#0e4c69] transition duration-100">See what you can do</a>
+
+        </div>
+
+
+        <div class="flex relative">
+
+            <img class="max-h-[125px] absolute -top-10 -right-8" src={trial} alt="30 day free trial badge" />
+            <img class="max-h-[350px] min-w-[150px]" src={iphone} alt="phone showing alders mobile app" />
+                
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="w-full bg-white flex flex-wrap gap-4 justify-evenly px-2 py-8 relative">
+
+        <div class="absolute -top-5 bg-white w-[150px] rounded-t-lg text-center">
+            Awards
+        </div>
+
+        <img src={stevie} alt="american buisness award logo" class="max-w-[80px] sm:max-w-[125px] md:max-h-[75px] md:max-w-[200px]" />
+
+        <img src={UBLogo} alt="utah buisness logo" class="max-w-[80px] sm:max-w-[125px] md:max-h-[75px] md:max-w-[200px]" />
+
+        <img src={utah100} alt="moutain west captial network logo" class="max-w-[80px] sm:max-w-[125px] md:max-h-[75px] md:max-w-[200px]"  />
+
+        <img src={bestCompanyLogo} alt="best company logo" class="max-w-[80px] sm:max-w-[125px] md:max-h-[75px] md:max-w-[200px]" />
+
+    </div>
+
+    <footer class="w-full bg-[#003154] py-8 px-4 lg:px-12 flex flex-col gap-4 sm:gap-0 items-center sm:flex-row justify-between">
+
+        <p class="text-white text-xs md:text-base"> &copy; Copyright Alder Holdings, LLC</p>
+
+        <a aria-label="back to alder.com homepage" href="/">
+            <img src={alderLogo} alt="alder logo" />
+        </a>
+
+        <a class="text-white text-xs md:text-base" href="/privacy">Privacy Policy | Terms of Use | Licenses</a>
+
+    </footer>
+
+  </body>
+</html>

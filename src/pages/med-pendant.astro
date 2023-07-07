@@ -1,0 +1,131 @@
+---
+
+import MedPendantBanner from '../components/med-pendant-components/MedPendantBanner'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import RequestQuoteForm from '../components/RequestQuoteForm'
+import flag from '../assets/whiteFlag.svg'
+import support from '../assets/whiteSupport.svg'
+import clock from '../assets/secondClock.svg'
+import medPendant from '../assets/med-pendant/medPendant.svg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Alder medical alert systems and bracelets make sure your loved ones are just minutes away from medical help. Call today to get started: 8007101289" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Medical Alert Systems | Alder Home Security</title>
+	</head>
+	<body class="bg-slate-400 flex flex-col justify-center">
+
+        <Header client:load path='/med-pendant' />
+
+        <div class="z-0">
+            <MedPendantBanner client:load />
+        </div>
+
+        <div class="z-10">
+            <RequestQuoteForm client:load bg_color='bg-[#297CA3]' />
+        </div>
+
+        <div class="flex w-full justify-center bg-white">
+            <div class="flex flex-col-reverse md:flex-row w-full px-4 py-12 gap-8 md:gap-0 max-w-7xl bg-white">
+
+                <div class="flex flex-col justify-center items-center md:items-start lg:pl-16 w-full md:w-1/2 gap-4">
+                    <div class="flex flex-row gap-2 items-center ">
+                        <img src={medPendant} alt="medical cross icon" />
+                        <h3 class="text-[#58585B] font-medium text-xl sm:text-2xl">The Medical Pendant</h3>
+                    </div>
+
+                    <p class=" text-[#58585B] w-4/5 ">If ever there was a place you should feel safe and secure, it's within the walls of your own home. Thanks to Alder's medical alert pendant, that remains the case. In times of distress, simply press a button and emergency services will be well on their way to help out in any way possible.</p>
+                    
+                </div>
+                
+                <div class="w-full flex justify-center md:w-1/2">
+                    
+                    <img src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1542146654/pendantZoom.jpg" alt="medical pendant necklace" />
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" w-full flex flex-col items-center gap-16 md:flex-row md:gap-0 justify-evenly px-8 py-8 bg-[#297CA3]">
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[60px] h-[60px]" src={clock} alt="clock icon" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">7 Second Response</h3>
+				<p class="text-white text-center">In 2017 our monitoring center responded to over 26,000 alarms in under 7 seconds.</p>
+
+			</div>
+
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[60px] h-[60px]" src={support} alt="headset" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">24/7 Support</h3>
+				<p class="text-white text-center">You can always reach us. If you have questions, just call and you'll get immediate expert support.</p>
+
+			</div>
+
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[90px] h-[60px]" src={flag} alt="american flag" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">100% USA Based</h3>
+				<p class="text-white text-center">The people in charge of your security shouldn't live in a different country. We're right here in Orem, UT.</p>
+
+			</div>
+
+		</div>
+
+        <div class="flex w-full justify-center bg-white">
+            <div class="flex flex-col items-center w-full gap-4 px-2 lg:gap-12 py-12 max-w-7xl bg-white">
+
+                <div class="flex flex-col items-center gap-4">
+                    <h3 class=" text-[#58585B] font-medium text-4xl md:text-6xl text-center " >How to get started</h3>
+                    <p class=" text-[#58585B] font-medium text-base md:text-lg text-center " >Time for a security upgrade? This is how we will help:</p>
+                </div>
+
+                <div class="flex flex-col items-center md:flex-row w-full justify-evenly">
+
+                    <div class="flex flex-col w-full md:w-1/4 h-[150px] justify-center items-center gap-4 text-[#58585B] ">
+                        <p class="text-2xl font-bold " >1</p>
+
+                        <p class="text-2xl font-medium" >We Listen</p>
+
+                        <p class="text-center">We call you and learn what you need</p>
+                    </div>
+
+                    <div class="flex flex-col w-full md:w-1/4 h-[150px] justify-center items-center gap-4 text-[#58585B] ">
+                        <p class="text-2xl font-bold " >2</p>
+
+                        <p class="text-2xl font-medium" >We Teach</p>
+
+                        <p class="text-center">We teach you how to use your system</p>
+                    </div>
+
+                    <div class="flex flex-col w-full md:w-1/4 h-[150px] justify-center items-center gap-4 text-[#58585B] ">
+                        <p class="text-2xl font-bold " >3</p>
+
+                        <p class="text-2xl font-medium" >We Monitor</p>
+
+                        <p class="text-center">We keep you safe 24/7</p>
+                    </div>
+
+                </div>
+
+                <a href="tel:800.710.1289" class="bg-[#168359] hover:bg-[#13724E] hover:scale-105 transition duration-100 text-white rounded-full px-6 border-2 border-white shadow-lg py-1">Call Now</a>
+
+            </div>
+        </div>
+            
+        <Footer/>
+
+    </body>
+</html>

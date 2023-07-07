@@ -1,0 +1,63 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import OutdoorIndoorCamera from '../components/camera-page-components/OutdoorIndoorCamera'
+import ProtectionQuestions from '../components/ProtectionQuestions'
+import MobileAccess from '../components/MobileAccess'
+import InstallAlder from '../components/camera-page-components/InstallAlder'
+import ThreeSteps from '../components/camera-page-components/ThreeSteps'
+import FAQ from '../components/camera-page-components/FAQ'
+import CameraBanner from '../components/camera-page-components/CameraBanner'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="A big-picture security camera in a small package. Kami fits perfectly with Alder home security kits. | Alder Home Security | Simple. Reliable. Affordable." />
+		<meta name="generator" content={Astro.generator} />
+		<title>Security Cameras | Alder Home Security</title>
+	</head>
+	<body class=" bg-white flex flex-col items-center justify-center">
+
+        <Header path='/cameras' client:load/>
+
+		<CameraBanner client:load />
+
+		<div class="flex w-full max-w-6xl flex-col items-center bg-white gap-4 my-4 py-4 px-2">
+
+			<h2 class="text-[#58585B] text-2xl md:text-3xl font-semibold text-center">Like putting a window right where you want it.</h2>
+
+			<p class="text-[#58585B] text-sm text-center w-full md:w-2/3">Enhance your home security with crystal-clear video, wireless streaming—plus the latest in night vision and motion detection—to get a front-row view of whatever happens at home from wherever you happen to go.</p>
+
+		</div>
+
+		<div id="camera">
+			<OutdoorIndoorCamera client:load />
+		</div>
+
+		<ProtectionQuestions client:load />
+
+		<div id="mobile" >
+			<MobileAccess headingText='Mobile Access' />
+		</div>
+
+		<InstallAlder client:only />
+
+		</br>
+
+		<div id="installation">
+			<ThreeSteps client:only />
+		</div>
+
+		<div id="faq">
+			<FAQ client:load />
+		</div>
+
+		<Footer/>
+		
+	</body>
+</html>

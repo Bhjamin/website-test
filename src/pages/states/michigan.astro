@@ -1,0 +1,108 @@
+---
+
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import RequestQuoteForm from '../../components/RequestQuoteForm'
+import whitePhone from '../../assets/white-phone.svg'
+import yardSign from '../../assets/yard-sign-Opt.jpg'
+import love from '../../assets/love.svg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Finding the best home security Detroit can help to protect your family from potential threats. Here’s what you should know about security in Detroit. " />
+		<title>Home Security Detroit | Alder Home Security</title>
+	</head>
+	<body class="bg-white w-full flex flex-col items-center justify-center">
+
+        <Header path='/states/michigan' client:load />
+
+        <br/>
+
+        <div class="w-full h-[325px] bg-cover bg-center max-w-6xl" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1566928370/Michigan.jpg")'
+        }}>
+        <div class="w-full h-full flex flex-col items-center gap-8 justify-center bg-neutral-800/[.50]">
+
+            <h1 class="text-white font-medium w-4/5 md:w-1/2 text-3xl sm:text-5xl md:text-7xl text-center">Home Security Detroit</h1>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 hover:scale-105 transition duration-100 py-2 px-4 rounded-3xl border-2 z-10 border-white">
+                <img alt="phone icon" src={whitePhone}/>
+                <p class="text-white text-[15px]">Call Now 800-710-1289</p>
+            </a>
+            
+        </div>
+        </div>
+
+        <div class="w-full max-w-6xl py-20 px-4 bg-white flex justify-center items-center ">
+
+            <p class="text-[#58585B] leading-7 w-full md:w-4/5 lg:w-2/3 text-center">Home security and safety is important, no matter where you live. Having home security systems ensures that your family’s safety no matter what time of day. It also protects your belongings if you’re away from home for a prolonged period of time. Having home security is basically insurance that prevents bad things from happening. In a recent survey of burglars, it was reported that 60% of burglars would not rob a home that has home security systems installed. However, in Detroit, security systems are even more important. Detroit is listed as the most dangerous city in the United States. Your safety and the safety of your family is the most important thing. Having home security systems can give you much-needed protection as you enjoy the benefits of living in the city.</p>
+
+        </div>
+
+        <RequestQuoteForm client:load bg_color="bg-[#61798F]" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl bg-cover" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1557271904/Map_Screen_Shot.png")'
+        }} >
+        <div class="w-full h-full bg-[#297CA3]/[.50] flex flex-col items-center py-4 px-6 gap-4 justify-evenly">
+                <h2 class="flex flex-row items-center text-2xl sm:text-6xl text-white font-medium gap-2 bg-neutral-800/[.75] p-2 rounded-xl ">WE <img alt="heart" class=" w-[30px] h-[30px] sm:w-[65px] sm:h-[65px]" src={love}/> DETROIT </h2>
+
+                <p class="text-white bg-neutral-800/[.85] text-sm md:text-base w-full md:w-2/3 p-4 leading-6 ">Having home security in Detroit is important. However, with so many options, how can you know which system is best for you. One of the first and most important things you should consider is your budget. Home security systems are important, but it’s also important that you don’t push your wallet past its breaking point. When you are looking at security systems, stay away from anything that will stretch your budget too far. Instead, look at the security systems with comfortable price ranges. For those looking for a monitoring system on a budget, one of the best things you can look into is DIY home security systems. With DIY home alarm security systems, you will set up the monitoring system on your own. The security company will still help you monitor the home. You will also be able to check up on the home on a mobile app, and if an alarm is triggered, you will get a notification and be able to check the cameras.</p>
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-4xl bg-cover bg-center " style={{
+            backgroundImage: `url(${yardSign})`
+        }} >
+        <div class="w-full h-full bg-neutral-800/[.75] md:bg-neutral-800/[.45] flex flex-col justify-center gap-4 py-8 px-4 md:px-12">
+
+            <h3 class="text-white text-2xl">Simple Home</h3>
+
+            <h3 class="text-white text-4xl font-medium">Security Tips</h3>
+
+            <p class="text-white text-xs sm:text-sm font-medium md:w-1/2 leading-6">An alarm monitoring system is the first thing that you need to set up in the home. However, to be as safe as possible in Detroit, there are a few other things you need to do. The first step you will want to take is to install your alarm monitoring system around the property. You want the alarm system to be remotely activated so you can turn it off remotely if the alarm is falsely triggered. If you can’t deactivate (or activate) the alarm from a remote location, it can cause inconvenience. You should also trim the bushes around your home. Burglars are known for monitoring homes before breaking in. They look for homes in Detroit that aren’t easily seen from the road. If there’s clutter in the yard, bushes blocking the road from view, or anything obscuring the house, it makes it easier for an intruder to break in. Clear out both the backyard and the front yard to ensure that your home is easily seen from all angles. Then, if a burglar comes close, they can be seen from all directions, and the neighbors can sound the alarm.</p>
+
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div class="w-full h-[250px] bg-cover" style={{
+                backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/v1557333574/simple.jpg")',
+                backgroundPosition: "center 85%"
+            }} />
+
+            <div class="w-full flex flex-col items-center justify-between gap-4 md:gap-0 md:flex-row px-4 py-12 ">
+
+                <div class=" w-full md:w-[25%] flex flex-col gap-8 md:gap-4">
+                    <h3 class="text-[#58585B] font-medium text-2xl text-center md:text-left ">What Should You Look For
+                        in Home Security Detroit?</h3>
+                </div>
+
+                <p class="text-[#58585B] text-sm leading-6 w-full md:w-[65%] " >
+                    Since Detroit is one of the most dangerous cities in America, there are a few things you should make sure you’re getting in your home security package. Here’s what you need: HD Security cameras, Door and window motion sensors, Remote monitoring, Monitoring cameras with cloud back-up, Wireless connection, Easy installation process, Motion sensors, Night vision. These features will help to give you better overall protection around the clock. For example, with HD quality monitoring cameras, you will be able to see better what is happening in and around your house. You never want to be caught after a burglary without clear footage of what happened. Having HD cameras will help you to identify better who was at home and help you better protect yourself in the future. The other features on the list do similar things. They will help you to stay safe by protecting your family and your home.
+                </p>
+
+            </div>
+
+        </div>
+        
+    
+        <Footer />
+
+    </body>
+</html>

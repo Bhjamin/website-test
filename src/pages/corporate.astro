@@ -1,0 +1,199 @@
+---
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import fast50 from '../assets/fast50.svg'
+import ut100 from '../assets/UT100.png'
+import Benefits from '../components/corporate-page-components/Benefits'
+import indeed from '../assets/corporate/indeedLogo.svg'
+import glassdoor from '../assets/corporate/glassdoorLogo.svg'
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content="We are experiencing rapid growth in a growing industry. See which Alder job is the right fit for you!" />
+        <title>Corporate | Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+        <Header client:load path="/corporate" />
+
+        <div class="w-full h-[500px] relative">
+            <video class="w-full h-full object-cover" loop autoplay muted>
+                <source
+                    src="https://alder.wpengine.com/wp-content/uploads/2017/04/aout-bg.mp4"
+                    type="video/mp4"
+                />
+                <source
+                    src="https://alder.wpengine.com/wp-content/uploads/2017/04/aout-bg.mp4"
+                    type="video/ogg"
+                />
+            </video>
+            <h1
+                class="w-full text-center sm:text-left sm:w-1/2 lg:w-1/3 text-white font-medium text-5xl sm:text-8xl lg:text-9xl absolute left-0 sm:left-16 bottom-12"
+            >
+                Alder Corporate
+            </h1>
+        </div>
+
+        <div class="w-full bg-white flex flex-col items-center gap-4 py-12 px-4">
+            <h2 class="text-[#297CA3] text-4xl sm:text-5xl font-medium">Open Positions</h2>
+
+            <p class="text-[#58585B] text-center">
+                See what position is the right fit for you
+            </p>
+
+            <a
+                href="https://recruiting.paylocity.com/Recruiting/Jobs/All/ebc7ca67-6b0c-4da0-90ca-d71025aafc5e/Alder-Holdings-LLC"
+                class="shadow-lg border-2 border-white rounded-full px-8 py-2 text-white bg-[#168359] hover:bg-[#14734f] hover:scale-105 transition duration-100 mt-4"
+                >See open positions HERE</a
+            >
+        </div>
+
+        <div class="w-full py-12 flex justify-center bg-[#F3F3F3]">
+            <p class="text-[#58585B] hidden md:flex items-center">
+                Check us out on <a
+                    href="https://www.glassdoor.com/Overview/Working-at-Alder-EI_IE1094555.11,16.htm"
+                    class="max-w-[145px] h-12 inline-flex mx-2"
+                    ><img
+                        alt="glassdoor logo"
+                        src={glassdoor}
+                        class="max-w-[145px] h-12 inline-flex"
+                    /></a
+                > and <a
+                    href="https://www.indeed.com/cmp/Alder?from=2pane&fromjk=42fba2e9368ffac6&jcid=fd58b217dba6422d&attributionid=2pane-name"
+                    class="max-w-[135px] h-12 inline-flex mx-2"
+                >
+                    <img
+                        alt="indeed logo"
+                        src={indeed}
+                        class="max-w-[135px] h-12 inline-flex"
+                    />
+                </a>
+            </p>
+
+            <div class="flex md:hidden flex-col items-center gap-6">
+                <p class="text-[#58585B] text-2xl">Check us out on</p>
+
+                <div class="flex flex-col w-full items-center">
+                    <a
+                        href="https://www.glassdoor.com/Overview/Working-at-Alder-EI_IE1094555.11,16.htm"
+                        class="max-w-[145px] h-12 inline-flex mx-2"
+                        ><img
+                            src={glassdoor}
+                            class="max-w-[145px] h-12 inline-flex"
+                        /></a
+                    >
+
+                    <p class="text-[#58585B] text-xl">and</p>
+
+                    <a
+                        href="https://www.indeed.com/cmp/Alder?from=2pane&fromjk=42fba2e9368ffac6&jcid=fd58b217dba6422d&attributionid=2pane-name"
+                        class="max-w-[135px] h-12 inline-flex mx-2"
+                    >
+                        <img
+                            src={indeed}
+                            class="max-w-[135px] h-12 inline-flex"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col items-center bg-white px-4 py-12 gap-6">
+
+            <h2 class="text-[#58585B] text-6xl font-medium text-center ">We Are Alder</h2>
+
+            <p class="text-[#58585B] text-center ">We passionately serve so that you have the freedom to live</p>
+
+            <div class="w-full flex flex-wrap justify-center gap-6 xs:gap-12">
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">1</p>
+                    <p class="text-[#58585B] text-sm font-medium">Model the Way</p>
+                    <p class="text-[#58585B] text-xs" >Lead by personal example from the front. Be transparent with open and honest communication.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">2</p>
+                    <p class="text-[#58585B] text-sm font-medium">Be Ever The Wiser</p>
+                    <p class="text-[#58585B] text-xs" >Make education a priority. Be an expert in our company culture and industry.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">3</p>
+                    <p class="text-[#58585B] text-sm font-medium">People Are Our Priority</p>
+                    <p class="text-[#58585B] text-xs" >Our integrity is defined by treating people as you wish to be treated.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">4</p>
+                    <p class="text-[#58585B] text-sm font-medium">Family Is Everything</p>
+                    <p class="text-[#58585B] text-xs" >The services we provide give families freedom to live according to their wants and needs.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">5</p>
+                    <p class="text-[#58585B] text-sm font-medium">Only Your Best</p>
+                    <p class="text-[#58585B] text-xs" >There are not shortcuts! Don’t cheat yourself by giving less than 100%.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-3 w-[110px] xs:w-[175px]">
+                    <p class="text-white text-4xl bg-[#297CA3] w-14 h-14 rounded-full flex items-center justify-center">6</p>
+                    <p class="text-[#58585B] text-sm font-medium">Make Them Remember</p>
+                    <p class="text-[#58585B] text-xs" >You have power to go the extra mile and exceed all expectations!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full bg-[#297CA3] flex justify-center">
+            <div class="w-full max-w-6xl px-4 md:px-8 py-8 gap-12 flex flex-col items-center">
+    
+                <div class="flex flex-col items-center w-3/4 gap-3">
+    
+                    <h3 class="text-white font-medium text-5xl text-center " >We're Growing</h3>
+    
+                    <p class="text-white text-center " >Alder was recognized twice as the fastest growing company in Utah</p>
+    
+                </div>
+    
+                <div class="w-full flex flex-col gap-8 md:flex-row md:gap-0 md:justify-between">
+    
+                    <div class="flex flex-col gap-4 items-center">
+    
+                        <img class=" max-h-48" src={fast50} alt="fast 50 award" />
+    
+                        <p class="text-white w-4/5 text-center" >Utah Business named Alder the 10th fastest growing company in Utah</p>
+    
+                    </div>
+    
+                    <div class="flex flex-col gap-4 items-center">
+    
+                        <img class=" max-h-48 bg-white " src={ut100} alt="utah 100 award" />
+    
+                        <p class="text-white w-4/5 text-center " >Utah Business named Alder the 10th fastest growing company in Utah</p>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="w-full flex justify-center items-center bg-gradient-to-r from-neutral-800 to-neutral-400 h-[175px] px-4">
+
+            <p class="text-white text-xl font-medium ">"Great place to work and get your career going. There is always a lot going on."</p>
+
+        </div>
+
+        <br/>
+
+        <Benefits client:load />
+
+        <Footer />
+    </body>
+</html>

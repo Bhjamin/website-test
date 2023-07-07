@@ -1,0 +1,60 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import HowToVerify from '../components/verify-rep-components/HowToVerify'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Make sure you are working with the right people. Verify your rep is working with Alder Security and learn how to spot a fake!" />
+		<title>Verify Rep | Alder Home Security</title>
+	</head>
+	<body class=" bg-slate-400 flex flex-col justify-center">
+
+        <Header path='/verify-rep' client:load/>
+	
+		<div class="w-full h-[425px] bg-cover bg-75 sm:bg-center " style={{
+			backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1542137767/VerifyRep-Opt.jpg")'
+		}} >
+			<div class="flex flex-col items-center md:items-start justify-end md:justify-center py-5 px-4 sm:px-12 md:px-20 lg:px-48 gap-2 md:gap-8 w-full h-full bg-neutral-800/[.40] ">
+
+			
+			<h1 class="text-white text-center md:text-left text-[35px] md:text-6xl font-medium" >Verify Representative</h1>
+			
+			<p class="text-white text-center md:text-left text-base md:text-lg " >Make sure you're working with the right people.</p>
+
+			
+			</div>
+		</div>
+
+		<HowToVerify client:load />
+
+		<div class=" bg-[#297CA3] py-16 px-4 sm:px-16 lg:px-56 w-full flex justify-center">
+
+			<div class="flex flex-col gap-8">
+				<h3 class=" text-6xl lg:text-7xl text-white font-medium">Spotting A Fake</h3>
+				
+				<h3 class="text-3xl text-white font-medium">Unauthorized personnel commonly claim:</h3>
+				
+				<p class="text-white text-lg"><strong>False:</strong> Alder has gone out of business.</p>
+				
+				<p class="text-white text-lg"><strong>False:</strong> Alder has outdated products.</p>
+				
+				<p class="text-white text-lg"><strong>False:</strong> Alder has left your area.</p>
+				
+				<p class="text-white text-lg"><strong>False:</strong> We work with Alder and we're here to upgrade your system.</p>
+			</div>
+
+		</div>
+
+		<Footer/>
+
+		
+	</body>
+</html>

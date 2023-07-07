@@ -1,0 +1,116 @@
+---
+import Header from '../../components/Header'
+import ProductHeader from '../../components/ProductHeader'
+import ProductSubMenu from '../../components/ProductSubMenu'
+import Footer from '../../components/Footer'
+import productGrid from '../../assets/sensor-grid-Opt.jpg'
+import whitePhone from '../../assets/white-phone.svg'
+import cooking from '../../assets/cooking.jpg'
+---
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="The Alder smart smoke detector will sound the second smoke or increased heat is detected in your home, helping you protect your home and family."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Smart Smoke Detector | Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+
+        <Header client:load path="/products/fire" />
+
+        <ProductHeader path="/products/fire" />
+
+        <div class="w-full h-[350px] bg-center bg-cover flex flex-col justify-center items-center px-2 sm:items-start sm:pl-12 md:pl-24 lg:pl-40 gap-6" style={{
+            'backgroundImage': `url(${productGrid})`,
+        }}>
+
+        <h1 class="text-[#297CA3] text-4xl xs:text-5xl font-medium text-center">Smart Smoke Detector</h1>
+
+        <p class="text-[#58585B] text-center">Get the Signal before the Smoke Signals</p>
+
+        <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] w-[240px] py-1 rounded-3xl border-2 z-10 border-white">
+            <img alt="phone icon" src={whitePhone}/>
+            <p class="text-white text-[15px]">Call Now for a Quote</p>
+        </a>
+
+        </div>
+
+        <div class="w-full flex flex-col-reverse items-center md:flex-row justify-between gap-8 py-6 md:py-0 md:gap-0">
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:px-8 ">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Smoke & Carbon Monoxide</h2>
+                
+                <p class="text-[#58585B] text-center md:text-left xl:leading-7" >Smoke is an early signal to what could turn into a devastating accident in our homes. But sometimes we aren’t aware of the signs. With our smart smoke detector, you can catch the signal before the smoke signals even start.</p>
+            </div>
+
+            <img class=" w-3/4 md:w-1/2" alt="someone cooking in the kitchen" src={cooking} />
+
+        </div>
+
+        <div class="w-full flex flex-col items-center md:flex-row justify-between gap-8 py-6 lg:py-0 md:gap-0 bg-[#F3F3F3]">
+
+            <img class=" w-3/4 md:w-1/2" alt="smoke detector on wall" src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1542669251/IMG_0427x-min.jpg" />
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:px-8">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Protect Your Straw, Stick or Brick Home</h2>
+                
+                <p class="text-[#58585B] text-center text-sm leading-6 xl:leading-7 md:text-left " >Today’s modern homes aren’t the cardboard house of ages gone by, but they are still terribly susceptible to damaging fires that can rip through a home in just minutes. Whether your home is made from straw, stick, or brick, there are key elements that are susceptible to flames. Alder fire alarm systems are specifically designed to alert you to the danger to give you enough time to get to safety while also alerting the proper authorities to your danger. Our smart smoke detector comes with an alarm that will sound the second smoke or increased heat is detected in your home helping you protect your family and property.</p>
+            </div>
+
+        </div>
+
+        <ProductSubMenu client:load path="/products/fire" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full flex flex-col items-center bg-[#297CA3] gap-4 px-4 py-12">
+
+            <h2 class="text-white text-5xl font-medium text-center">How it works</h2>
+            <p class="text-white text-center text-lg" >Securing your home has never been easier</p>
+
+            <div class="w-full flex flex-col items-center gap-8 md:gap-0 md:flex-row justify-between px-2 py-4">
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Request a Quote</h3>
+
+                    <p class="text-white text-sm text-center">Our home security professionals help you get exactly what you need and always give you the best price.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Setup Your System</h3>
+
+                    <p class="text-white text-sm text-center">When your package arrives, follow the setup instructions. It takes less than 10 minutes.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Stay Safe</h3>
+
+                    <p class="text-white text-sm text-center">You will have 24/7 monitoring and support. If you ever need help, just call.</p>
+
+                </div>
+
+            </div>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] hover:scale-105 transition duration-100 py-1 px-6 rounded-3xl border-2 z-10 border-white">
+                <p class="text-white text-[15px]">Call Now</p>
+            </a>
+
+        </div>
+        
+        <Footer />
+
+    </body>
+</html>

@@ -1,0 +1,179 @@
+---
+
+import Header from '../components/Header'
+import LifeSafetyBanner from '../components/life-safety-components/LifeSafetyBanner'
+import RequestQuoteForm from '../components/RequestQuoteForm'
+import MobileAccess from '../components/MobileAccess'
+import SimpleSlide from '../components/SimpleSlide'
+import Footer from '../components/Footer'
+import cooking from '../assets/cooking.jpg'
+import smokeIcon from '../assets/life-safety/blueSmokeDetector.svg'
+import greenArrow from '../assets/greenArrow.svg'
+import floodPic from '../assets/life-safety/flood-straighten.jpg'
+import floodIcon from '../assets/productFlood.svg'
+import whiteArrow from '../assets/whiteArrow.svg'
+import medical from '../assets/life-safety/medical.jpg'
+import medicalIcon from '../assets/life-safety/blueMedIcon.svg'
+import flag from '../assets/whiteFlag.svg'
+import support from '../assets/whiteSupport.svg'
+import clock from '../assets/secondClock.svg'
+import securityHouse from '../assets/Security-house-Opt.jpg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Keep your home and family safe with an Alder home security system. Check out how to protect your home from any threat with one of our Alder security systems." />
+		<meta name="generator" content={Astro.generator} />
+		<title>Protect Your Home | Alder Home Security</title>
+	</head>
+	<body class=" w-full bg-white flex flex-col items-center justify-center">
+	
+		<Header path='/life-safety' client:load/>
+	
+		<div class="z-0 w-full">
+			<LifeSafetyBanner client:only/>
+		</div>
+
+		<div class="z-10 w-full">
+			<RequestQuoteForm client:load bg_color='bg-[#297CA3]' />
+		</div>
+
+
+
+		<div class="w-full max-w-5xl flex flex-col-reverse bg-white items-center gap-4 md:flex-row md:gap-2 p-4">
+
+			<div class="flex flex-col gap-4 w-full items-center justify-center md:items-start md:w-1/2">
+
+				<div class=" w-full flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2">
+					<img class="w-10 h-10 sm:w-12 sm:h-12" src={smokeIcon} alt="fire alarm icon" />
+					<h3 class="text-[#58585B] font-medium text-center sm:text-start text-xl sm:text-2xl ">Smoke & Carbon Monoxide</h3>
+				</div>
+
+				<p class=" w-full sm:w-3/4 text-center sm:text-left text-[#58585B]">Our smart smoke detectors can tell the difference between a house fire and your burnt toast. They also double as a carbon monoxide sensor.</p>
+
+				<a href="/products/fire" class="flex flex-row gap-2 items-center hover:scale-105 hover:translate-x-3 transition duration-100">
+					<p class=" text-lg text-[#168359]">Smoke Detector Page</p>
+					<img src={greenArrow} alt="green arrowing pointing right" />
+				</a>
+
+			</div>
+
+			<img class=" md:w-1/2" src={cooking} alt="woman cooking" />
+
+		</div>
+
+
+
+		<div class="w-full h-[500px] flex bg-no-repeat bg-cover bg-center justify-center " style={{
+			backgroundImage: `url(${floodPic})`
+		}} >
+
+			<div class="w-full h-full flex justify-center bg-neutral-800/[.50]">
+
+				<div class=" w-3/4 md:w-1/2 lg:w-1/3 h-full flex flex-col gap-6 justify-center">
+
+					<div class="flex flex-row items-center gap-4">
+						<img src={floodIcon} alt="flood sensor icon" />
+						<h3 class="text-white font-medium text-3xl">Flood and Freeze</h3>
+					</div>
+					
+					<p class="text-white text-lg">The flood and freeze sensor alerts you the second a flood is detected or freezing temperatures occur. Place the sensors near your sinks, dish washers, hot water heaters and more. We will call you immediately if a problem is detected.</p>
+
+					<a href="/products/flood" class="flex flex-row items-center gap-2 hover:scale-105 hover:translate-x-5 transition duration-100">
+						<p class="text-white text-lg">Flood Sensor Page</p>
+						<img src={whiteArrow} alt="white arrow pointing right" />
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="w-full max-w-5xl flex flex-col-reverse bg-white items-center gap-4 md:flex-row md:gap-2 p-4">
+
+			<div class="flex flex-col gap-4 w-full items-center justify-center md:items-start md:w-1/2">
+
+				<div class=" w-full flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2">
+					<img class="w-10 h-10 sm:w-12 sm:h-12" src={medicalIcon} alt="medical pendant icon" />
+					<h3 class="text-[#58585B] font-medium text-center sm:text-start text-xl sm:text-2xl ">Medical</h3>
+				</div>
+
+				<p class=" w-full sm:w-3/4 text-center sm:text-left text-[#58585B]">Your loved ones never have to be left alone without access to life-saving help in an emergency. With the Alder medical alert pendant, that emergency help is only a button push away. Simply push the pendant button, and Alder’s monitoring center will contact you immediately.</p>
+
+				<a href="/med-pendant" class="flex flex-row gap-2 items-center hover:scale-105 hover:translate-x-3 transition duration-100">
+					<p class=" text-lg text-[#168359]">Med Pendant Page</p>
+					<img src={greenArrow} alt="green arrow pointing right" />
+				</a>
+
+			</div>
+
+			<img class=" md:w-1/2" src={medical} alt="man and elderly woman smiling" />
+
+		</div>
+
+		<MobileAccess headingText='Instant Alerts' text='If one of your sensors detects trouble you will be alerted and called on your smart device instantly.'/>
+
+		<div class=" w-full flex flex-col items-center gap-16 md:flex-row md:gap-0 justify-evenly px-8 py-8 bg-[#297CA3]">
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[60px] h-[60px]" src={clock} alt="clock icon" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">7 Second Response</h3>
+				<p class="text-white text-center">In 2017 our monitoring center responded to over 26,000 alarms in under 7 seconds.</p>
+
+			</div>
+
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[60px] h-[60px]" src={support} alt="headset" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">24/7 Support</h3>
+				<p class="text-white text-center">You can always reach us. If you have questions, just call and you'll get immediate expert support.</p>
+
+			</div>
+
+
+			<div class="flex flex-col items-center w-full md:w-1/4 gap-2">
+
+				<img class=" w-[90px] h-[60px]" src={flag} alt="american flag" />
+				<h3 class="text-white font-medium text-center text-xl mb-3">100% USA Based</h3>
+				<p class="text-white text-center">The people in charge of your security shouldn't live in a different country. We're right here in Orem, UT.</p>
+
+			</div>
+
+		</div>
+
+
+		<SimpleSlide client:load />
+
+
+		<div class=" bg-[#F1F9FB] flex flex-col-reverse items-center justify-center md:flex-row">
+
+			<div class="w-full px-4 py-4 md:w-1/2 flex flex-col items-start md:items-center lg:items-start gap-4 lg:pl-16 xl:pl-32 ">
+
+				<h3 class="text-[#58585B] text-5xl md:text-4xl lg:text-6xl font-medium ">Home Security</h3>
+
+				<p class="text-[#58585B] text-2xl md:text-xl lg:text-3xl">Protection from home instrusion.</p>
+
+				<a href="home-security" class="flex flex-row gap-2 items-center hover:scale-105 hover:translate-x-3 transition duration-100">
+					<p class=" text-lg text-[#0D5E3E]">Home Security Page</p>
+					<img src={greenArrow} alt="green arrow pointing right" />
+				</a>
+
+			</div>
+
+			<img class="w-full md:w-1/2" src={securityHouse} alt="house with alder yard sign" />
+
+		</div>
+
+		<Footer/>
+
+	</body>
+</html>

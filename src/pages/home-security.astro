@@ -1,0 +1,190 @@
+---
+
+import Header from '../components/Header'
+import HomeSecurityBanner from '../components/home-security-components/HomeSecurityBanner'
+import ProductMenu from '../components/ProductMenu'
+import RequestQuoteForm from '../components/RequestQuoteForm'
+import ReviewQuotes from '../components/home-security-components/ReviewQuotes'
+import SimpleSlide from '../components/SimpleSlide'
+import MobileAccess from '../components/MobileAccess'
+import Footer from '../components/Footer'
+import alarm from '../assets/home-security/alarm.svg'
+import clock from '../assets/home-security/clock.svg'
+import monitoring from '../assets/home-security/monitoring.svg'
+
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="description" content="Every second counts when it comes to home security. Our system responds to threats in 3.4 seconds--10 times faster than other security companies." />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Home Security | Alder Home Security</title>
+	</head>
+	<body class=" bg-white flex flex-col justify-center">
+
+		<Header path='/home-security' client:load/>
+
+		<div class=" z-0" >
+			<HomeSecurityBanner client:load />
+		</div>
+
+		<div class=" z-10" >
+			<ProductMenu/>
+		</div>
+
+		<RequestQuoteForm client:load bg_color='bg-[#297CA3]'/>
+
+		<ReviewQuotes client:load />
+
+		<div id="securityStats" class={`w-full h-[550px] bg-no-repeat bg-cover bg-center`}>
+			<style>
+				#securityStats {
+					background-image: url('../assets/yard-sign-Opt.jpg');
+				}
+
+				@media (max-width: 550px) {
+					#securityStats {
+						background-image: url('../assets/home-security/yard-sign-mobile.jpg');
+					}
+				}
+			</style>
+
+			<div class="w-full h-full flex flex-col justify-center gap-10 px-5 md:px-20 lg:px-40 bg-neutral-800/[.20]">
+
+				<div class="flex flex-col w-4/5 sm:w-1/2 lg:w-2/5 gap-2">
+
+					<h3 class="text-white font-medium text-4xl md:text-5xl">15.4 Seconds</h3>
+					<p class="text-white">Every 15.4 Seconds a burglary occurs in the United States</p>
+
+				</div>
+
+				<div class="flex flex-col w-4/5 sm:w-1/2 lg:w-2/5 gap-2">
+
+					<h3 class="text-white font-medium text-4xl md:text-5xl">60 Percent</h3>
+					<p class="text-white">During burglaries, 60% of the time people are home.</p>
+					
+				</div>
+
+				<div class="flex flex-col w-4/5 sm:w-1/2 lg:w-2/5 gap-2">
+
+					<h3 class="text-white font-medium text-4xl md:text-5xl">4x</h3>
+					<p class="text-white">According to the FBI, you are 4x less likely to have a home invasion if you display a yard sign.</p>
+					
+				</div>
+
+			</div>
+		</div>
+
+		<br/>
+
+		<div id="everySecond" class={`w-full h-[650px] bg-no-repeat bg-cover bg-left`}>
+			<style>
+				#everySecond {
+					background-image: url('../assets/home-security/every-second-counts-Opt.jpg');
+					
+				}
+
+				@media (max-width: 1280px) {
+					#everySecond {
+						background-position-x: -150px;
+					}
+				}
+
+				@media (max-width: 850px) {
+					#everySecond {
+						background-image: url('../assets/home-security/every-second-counts-mobile.jpg');
+						background-position-x: 0px;
+					}
+				}
+
+				@media (max-width: 400px) {
+					#everySecond {
+						background-position-x: -65px;
+					}
+				}
+			</style>
+
+			<div class="w-full h-full flex items-center xl:px-40 px-4 lg:justify-end ">
+
+				<div class=" hidden lg:flex flex-col w-1/2 gap-5 ">
+
+					<h3 class="text-white font-medium text-center text-4xl lg:text-6xl">Every Second Counts</h3>
+
+					<p class="text-white text-lg text-center ">In 2017, our monitoring center responded to <strong>2,376,033</strong> medical, fire, and burglary alarms in an average of <strong>3.4 seconds</strong> or less. That's <strong>10x faster</strong> than other alarm companies!</p>
+
+					<div class="flex flex-row justify-evenly md:gap-2">
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img src={monitoring} alt="person with headset" />
+							<h3 class=" text-2xl font-medium text-[#4BBDEC]">24/7</h3>
+							<p class="text-white text-xs font-light">Monitoring</p>
+						</div>
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img src={alarm} alt="alarm icon blaring" />
+							<h3 class=" text-2xl font-medium text-[#4BBDEC]">2.3 Million</h3>
+							<p class="text-white text-xs font-light">Total Alarm Responses</p>
+						</div>
+
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img src={clock} alt="clock icon" />
+							<h3 class=" text-2xl font-medium text-[#4BBDEC]">3 Second</h3>
+							<p class="text-white text-xs font-light">Response Rate</p>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div class="flex lg:hidden py-4 lg:py-0 flex-col items-center justify-between w-full h-full">
+
+					<h3 class="text-white font-medium text-center text-6xl">Every Second Counts</h3>
+
+					<div class="w-full flex flex-col md:w-3/4 items-center gap-4">
+
+						<p class="text-white text-lg text-center ">In 2017, our monitoring center responded to <strong>2,376,033</strong> medical, fire, and burglary alarms in an average of <strong>3.4 seconds</strong> or less. That's <strong>10x faster</strong> than other alarm companies!</p>
+
+					<div class="flex w-full md:w-3/4 flex-row justify-evenly md:gap-2">
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img class="w-[40px] h-[40px] sm:w-[54px] sm:h-[54px]" src={monitoring} alt="person with headset" />
+							<h3 class=" text-lg sm:text-2xl font-medium text-[#4BBDEC]">24/7</h3>
+							<p class="text-white text-[10px] sm:text-xs font-light">Monitoring</p>
+						</div>
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img class="w-[40px] h-[40px] sm:w-[54px] sm:h-[54px]" src={alarm} alt="alarm icon blaring" />
+							<h3 class=" text-lg sm:text-2xl font-medium text-[#4BBDEC]">2.3 Million</h3>
+							<p class="text-white text-[10px] sm:text-xs font-light">Total Alarm Responses</p>
+						</div>
+
+
+						<div class="flex flex-col items-center gap-2 ">
+							<img class="w-[40px] h-[40px] sm:w-[54px] sm:h-[54px]" src={clock} alt="clock icon" />
+							<h3 class=" text-lg sm:text-2xl font-medium text-[#4BBDEC]">3 Second</h3>
+							<p class="text-white text-[10px] sm:text-xs font-light">Response Rate</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<SimpleSlide client:load />
+	
+		<MobileAccess headingText='Stay in Control' />
+
+		<Footer/>
+
+		
+	</body>
+</html>

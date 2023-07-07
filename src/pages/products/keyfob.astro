@@ -1,0 +1,116 @@
+---
+import Header from '../../components/Header'
+import ProductHeader from '../../components/ProductHeader'
+import ProductSubMenu from '../../components/ProductSubMenu'
+import keyfob from '../../assets/keyfob/keyfob.png'
+import Footer from '../../components/Footer'
+import productGrid from '../../assets/sensor-grid-Opt.jpg'
+import whitePhone from '../../assets/white-phone.svg'
+---
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../../AlderFavicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Convenient security. Alder’s security key fob allows you to quickly arm or disarm your home security system from just a push of a button."
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>Security Key Fob | Alder Home Security</title>
+    </head>
+    <body class="bg-white flex flex-col items-center justify-center">
+
+        <Header client:load path="/products/keyfob" />
+
+        <ProductHeader path="/products/keyfob" />
+
+        <div class="w-full h-[350px] bg-center bg-cover flex flex-col justify-center items-center px-2 sm:items-start sm:pl-12 md:pl-24 lg:pl-40 gap-6" style={{
+            'backgroundImage': `url(${productGrid})`,
+        }}>
+
+        <h1 class="text-[#297CA3] text-4xl xs:text-5xl text-center font-medium">Key Remote</h1>
+
+        <p class="text-[#58585B] text-center">Simple controls, where ever you go.</p>
+
+        <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] w-[240px] py-1 rounded-3xl border-2 z-10 border-white">
+            <img alt="phone icon" src={whitePhone}/>
+            <p class="text-white text-[15px]">Call Now for a Quote</p>
+        </a>
+
+        </div>
+
+        <div class="w-full flex flex-col-reverse items-center md:flex-row justify-between gap-8 py-6 md:py-0 md:gap-0">
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:pl-10 ">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Convenient Security</h2>
+                
+                <p class="text-[#58585B] text-center md:text-left xl:leading-7" >The key remote allows you to quickly arm or disarm your home security system. Just attach it to your keys, and it goes where you go, giving you instant control to your home's security system. No need to jump back out of the car as you pull down your driveway just because you forgot to arm your system before your left.</p>
+            </div>
+
+            <img class=" max-w-[60%] sm:max-w-[45%] sm:max-h-[525px]" alt="security key fob" src={keyfob} />
+
+        </div>
+
+        <div class="w-full flex flex-col items-center md:flex-row justify-between gap-8 py-6 lg:py-0 md:gap-0 bg-[#F3F3F3]">
+
+            <img class=" w-3/4 md:w-1/2" alt="someone holding the security keyfob" src="https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1542669754/20180126-AlderSimple_ChristineAllen-103-min.jpg" />
+
+            <div class=" w-full md:w-1/2 flex flex-col gap-4 px-4 md:px-8">
+                <h2 class="text-[#58585B] text-2xl lg:text-3xl font-medium text-center md:text-left">Emergency SOS Button</h2>
+                
+                <p class="text-[#58585B] text-center text-sm leading-6 xl:leading-7 md:text-left " >The key remote also has an emergency SOS button. By pushing this button, Alder's security monitoring team will attempt to reach you to ensure your safety. This will give you the quickest and easiest access to immediate help should you be in danger in your own home</p>
+            </div>
+
+        </div>
+
+        <ProductSubMenu client:load path="/products/keyfob" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full flex flex-col items-center bg-[#297CA3] gap-4 px-4 py-12">
+
+            <h2 class="text-white text-5xl font-medium text-center">How it works</h2>
+            <p class="text-white text-center text-lg" >Securing your home has never been easier</p>
+
+            <div class="w-full flex flex-col items-center gap-8 md:gap-0 md:flex-row justify-between px-2 py-4">
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Request a Quote</h3>
+
+                    <p class="text-white text-sm text-center">Our home security professionals help you get exactly what you need and always give you the best price.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Setup Your System</h3>
+
+                    <p class="text-white text-sm text-center">When your package arrives, follow the setup instructions. It takes less than 10 minutes.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-[30%] gap-4">
+
+                    <h3 class="text-white text-2xl font-medium text-center" >Stay Safe</h3>
+
+                    <p class="text-white text-sm text-center">You will have 24/7 monitoring and support. If you ever need help, just call.</p>
+
+                </div>
+
+            </div>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 bg-[#168359] hover:bg-[#13724e] hover:scale-105 transition duration-100 py-1 px-6 rounded-3xl border-2 z-10 border-white">
+                <p class="text-white text-[15px]">Call Now</p>
+            </a>
+
+        </div>
+        
+        <Footer />
+
+    </body>
+</html>

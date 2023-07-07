@@ -1,0 +1,107 @@
+---
+
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import RequestQuoteForm from '../../components/RequestQuoteForm'
+import whitePhone from '../../assets/white-phone.svg'
+import yardSign from '../../assets/yard-sign-Opt.jpg'
+import love from '../../assets/love.svg'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="At Alder Home Security, we want to ensure your family is protected. That is why we offer one of the best home security systems Mississippi." />
+		<meta name="generator" content={Astro.generator} />
+		<title>Home Security Mississippi | Alder Home Security</title>
+	</head>
+	<body class="bg-white w-full flex flex-col items-center justify-center">
+
+        <Header path='/states/mississippi' client:load />
+
+        <br/>
+
+        <div class="w-full h-[325px] bg-cover bg-center max-w-6xl" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1566941821/Mississippi.jpg")'
+        }}>
+        <div class="w-full h-full flex flex-col items-center gap-8 justify-center bg-neutral-800/[.50]">
+
+            <h1 class="text-white font-medium w-4/5 md:w-2/3 text-3xl sm:text-5xl md:text-6xl text-center">Home Security Systems Mississippi</h1>
+
+            <a href="tel:800-710-1289" class="flex items-center justify-center gap-2 hover:scale-105 transition duration-100 py-2 px-4 rounded-3xl border-2 z-10 border-white">
+                <img alt="phone icon" src={whitePhone}/>
+                <p class="text-white text-[15px]">Call Now 800-710-1289</p>
+            </a>
+            
+        </div>
+        </div>
+
+        <div class="w-full max-w-6xl py-20 px-4 bg-white flex justify-center items-center ">
+
+            <p class="text-[#58585B] leading-7 w-full md:w-4/5 lg:w-2/3 text-center">One of the most important things you can do for your home and family is to keep them safe. They expect to be loved, protected, and to feel safe in their home. One of the best ways you can do this is by providing them with a home security system that will protect them at every hour of the day. At Alder, we pride ourselves in giving you exactly that. Alder is one of the most trusted home security system brands in Mississippi because we put your family first. Our entire system is designed to put your home and family before anything else.</p>
+
+        </div>
+
+        <RequestQuoteForm client:load bg_color="bg-[#61798F]" />
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl bg-cover" style={{
+            backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/q_auto,f_auto/v1557271904/Map_Screen_Shot.png")'
+        }} >
+        <div class="w-full h-full bg-[#297CA3]/[.50] flex flex-col items-center py-4 px-6 gap-4 justify-evenly">
+                <h2 class="flex flex-row items-center text-2xl sm:text-6xl text-white font-medium gap-2 bg-neutral-800/[.75] p-2 rounded-xl ">WE <img alt="heart" class=" w-[30px] h-[30px] sm:w-[65px] sm:h-[65px]" src={love}/> MISSISSIPPI </h2>
+
+                <p class="text-white bg-neutral-800/[.85] text-sm md:text-base w-full md:w-2/3 p-4 leading-6 ">Alder cares for its own. When you get one of our home security systems, you become part of the Alder family. We are at your service, and you have access to all the resources at our disposal. If you ever have questions, concerns, or compliments, you can contact us through email, call, or text. We are always happy to help. Included in our home security system package, we give several HD home security system cameras, door and window sensors for the home, motion sensors, a home security system sign, a home doorbell camera, and a free home app that allows you to always watch your home. All of these things give you access to some of the best home security systems that the world can offer. And we do it all at a fraction of the price because we want you to feel safe in your home.</p>
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-4xl bg-cover bg-center " style={{
+            backgroundImage: `url(${yardSign})`
+        }} >
+        <div class="w-full h-full bg-neutral-800/[.75] md:bg-neutral-800/[.45] flex flex-col justify-center gap-4 py-8 px-4 md:px-12">
+
+            <h3 class="text-white text-2xl">Remote Access to</h3>
+
+            <h3 class="text-white text-4xl font-medium">Home Cameras</h3>
+
+            <p class="text-white text-xs sm:text-sm font-medium md:w-1/2 leading-6">At Alder, we want you to feel like you’re always in charge of your home security. As the head of the home, you should always have access to home cameras, motion sensors, and other resources that allow you to check up on the condition of your home. After you install the home security system, you have access to all of these features. Best of all, we ensure that you can access the home security system from anywhere in the world. Your home is protected even while you’re away on vacation. And, if you’re ever nervous about your home, you can go onto the app on your phone and have direct contact with the cameras. You will be able to see a live stream from each and every HD camera set up around the home. If an alarm is triggered by the home security system in the home, you will get an immediate notification on your mobile device. If the alarm is a false alarm, you can deactivate the home alarm remotely through your app. If you see anything suspicious on the camera, you can call the police and have them take care of the issue.</p>
+
+        </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            <div class="w-full h-[250px] bg-cover" style={{
+                backgroundImage: 'url("https://res.cloudinary.com/alder/image/upload/v1557333574/simple.jpg")',
+                backgroundPosition: "center 85%"
+            }} />
+
+            <div class="w-full flex flex-col items-center justify-between gap-4 md:gap-0 md:flex-row px-4 py-12 ">
+
+                <div class=" w-full md:w-[25%] flex flex-col gap-8 md:gap-4">
+                    <h3 class="text-[#58585B] font-medium text-2xl text-center md:text-left ">Managing a Budget with Home Security Systems</h3>
+                </div>
+
+                <p class="text-[#58585B] text-sm leading-6 w-full md:w-[65%] " >
+                    Managing a Budget with Home Security Systems At Alder home security, we know how important it is to manage a budget in a home. There are several ways that we ensure that your home is able to stay protected without spending every penny in your wallet. Traditionally, home security systems cost thousands of dollars a year and hundreds of dollars in installation costs. However, we make our home security systems to fit into a family’s budget. We start by using DIY home security. What this means is that we put the customer in charge of the home. We send the customer a fully stocked home security system and provide a video with instructions on how to place it in the home and turn on the system (hint: all you have to do is turn it on since everything is wireless). Once the customer is ready with the home system, the customer downloads the Alder app, and they have 24/7 access to video streaming from their security system cameras in the home. Since all of our home cameras and doorbell cameras are wireless, it makes for easy setup in the home. The purpose of having an easy setup for a DIY home security system is because it saves your family money. You don’t have to pay any installation fees. The setup of your home security system is completely free because we want you to feel comfortable working with us. You can call us anytime for free as well if you have questions at any point.
+                </p>
+
+            </div>
+
+        </div>
+        
+    
+        <Footer />
+
+    </body>
+</html>

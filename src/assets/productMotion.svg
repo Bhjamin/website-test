@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="35px" viewBox="0 0 24 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Simple/Product/Keyfob" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-803.000000, -115.000000)" id="Group-7" stroke="#FFFFFF">
+            <g transform="translate(789.000000, 115.000000)">
+                <g id="motion-icon" transform="translate(14.000000, 0.000000)">
+                    <path d="M12,0.5 C5.64872538,0.5 0.5,5.64872538 0.5,12 L0.5,23 C0.5,29.3512746 5.64872538,34.5 12,34.5 C18.3512746,34.5 23.5,29.3512746 23.5,23 L23.5,12 C23.5,5.64872538 18.3512746,0.5 12,0.5 Z M7,8.5 L17,8.5 C18.3807119,8.5 19.5,9.61928813 19.5,11 L19.5,24 C19.5,25.3807119 18.3807119,26.5 17,26.5 L7,26.5 C5.61928813,26.5 4.5,25.3807119 4.5,24 L4.5,11 C4.5,9.61928813 5.61928813,8.5 7,8.5 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

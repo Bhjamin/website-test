@@ -1,0 +1,25 @@
+---
+import Header from '../components/Header'
+import AdamSchanz from '../components/adam-schanz-components/AdamSchanz'
+import Footer from '../components/Footer'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Under CEO Adam Schanz, Alder Home Security has received numerous accolades and has been annually recognized as one of the fastest growing companies in Utah."/>
+		<title>Adam Schanz | Alder Home Security</title>
+	</head>
+	<body class="bg-white flex flex-col justify-center">
+
+        <Header client:load path="/adam-schanz" />
+
+        <AdamSchanz client:only />
+
+        <Footer />
+
+    </body>
+</html>

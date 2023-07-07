@@ -1,0 +1,31 @@
+---
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import ContactForm from '../components/contact-page-components/ContactForm'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AlderFavicon.png" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="We are here to help 24/7. Contact us anytime at 800-710-1289 or customerservice@alder.com." />
+		<meta name="generator" content={Astro.generator} />
+		<title>Contact | Alder Home Security</title>
+	</head>
+	<body class="bg-white flex flex-col justify-center">
+        <Header client:load path='/contact' />
+
+        <div class="flex flex-col items-center my-8 gap-4 w-full bg-white ">
+            <h1 class=" text-[#58585B] text-center text-5xl sm:text-6xl font-medium " >Contact Alder</h1>
+
+            <p class="text-[#58585B] text-2xl font-medium " >We're here 24/7</p>
+        </div>
+
+        <ContactForm client:load />
+        
+        <Footer/>
+    </body>
+</html>
