@@ -31,7 +31,7 @@ const ContactForm = () => {
 
         const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(email).toLowerCase())
 
-        const formValid = null
+        let formValid = null
 
         validPhoneNumber && validEmail && firstName.length > 1 && lastName.length > 1 && message.length > 14 ? formValid = true : formValid = false
 

@@ -286,7 +286,7 @@ const Sales = () => {
 
         const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(email2).toLowerCase())
 
-        const formValid = null
+        let formValid = null
 
         validPhoneNumber && validEmail && name2.length > 4 && state2.length > 1 ? formValid = true : formValid = false
 
