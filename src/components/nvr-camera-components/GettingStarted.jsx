@@ -1,7 +1,7 @@
 import VideoModal from '../VideoModal'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import outdoorCamera from '../../assets/rectangle44.png'
+import outdoorCamera from '../../assets/Rectangle44.png'
 import yiCamera from '../../assets/yicameralone.jpg'
 
 const GettingStarted = () => {
